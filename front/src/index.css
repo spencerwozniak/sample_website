@@ -1,0 +1,77 @@
+/* index.css */
+
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* CSS Reset */
+:root {
+  font-family: 'Poppins';
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #102245;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text within the body */
+  min-width: 320px;
+  min-height: 100vh;
+  color: #102245;
+  font-family: 'Poppins';
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: center;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Additional styles to ensure text within containers is centered */
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

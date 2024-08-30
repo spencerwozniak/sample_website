@@ -1,0 +1,28 @@
+/* CSS for LoadingCircle component */
+.loading-container {
+    position: fixed;  /* Fixed position relative to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    z-index: 1000;  /* Ensures it's above other content */
+    background-color: rgba(0, 0, 0, 0.4);  /* Optional: Adds a semi-transparent overlay */
+  }
+  
+  .loading-circle {
+    border: 3px solid rgba(0, 0, 0, 0.1); /* Light grey border, making it slightly thinner */
+    border-top: 3px solid blue;  /* Blue top border */
+    border-radius: 50%;  /* Circular shape */
+    width: 30px;  /* Smaller width */
+    height: 30px;  /* Smaller height */
+    animation: spin 1s linear infinite;  /* Spinning animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }  /* Start of the animation */
+    100% { transform: rotate(360deg); }  /* End of the animation */
+  }
+  

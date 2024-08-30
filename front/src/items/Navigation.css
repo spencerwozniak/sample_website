@@ -1,0 +1,231 @@
+/* Navigation.css */
+
+.navigation-header {
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.nav-menu-button {
+  padding-right: 8px;
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 170px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.right-side-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(16, 34, 69);
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+}
+
+.contact-link:hover, 
+.contact-link:focus, 
+.contact-link:active {
+  color: #657c2c;
+}
+
+.right-side-links--big .right-side-links__link {
+  display: block;
+  position: relative;
+  width: 141.989px;
+  height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #102245;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.right-side-links--big .right-side-links__link:hover {
+  background-color: #657c2c;
+  transform: scale(1.05);
+}
+
+.right-side-links__rotating-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInOut 8s ease-in-out infinite;
+}
+
+.right-side-links__rotating-text:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes fadeInOut {
+  0%, 10% { opacity: 0; }
+  25%, 45% { opacity: 1; }
+  60%, 100% { opacity: 0; }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  z-index: 1001;
+  border: 1px solid rgb(241, 241, 241);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.dropdown-menu.open {
+  max-height: 500px;
+  padding: 15px 0;
+  padding-top: 25px;
+}
+
+.dropdown-menu.closed {
+  max-height: 0;
+  padding: 0;
+}
+
+.nav-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.nav-column__heading {
+  font-size: 18px;
+  color: rgb(16, 34, 69);
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-column__heading:hover {
+  color: #9dbf44;
+  transform: scale(1.04);
+}
+
+.nav-column__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-column__link {
+  color: #657c2c;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-column__link:hover {
+  color: #9dbf44;
+  transform: scale(1.04);
+}
+
+/* Media Query for hiding the contact link on smaller screens */
+@media (max-width: 600px) {
+  .contact-link {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-side-links--big .right-side-links__link {
+    width: 120px;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: auto; /* Move the button to the left */
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+
+  .navigation-header {
+    padding: 10px 0px;
+  }
+  
+  .nav-container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .right-section {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding-right: 20px;
+  }
+
+  .dropdown-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-column {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

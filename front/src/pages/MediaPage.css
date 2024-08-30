@@ -1,0 +1,166 @@
+.media-page {
+  overflow-x: hidden; /* Prevents horizontal overflow */
+  padding: 20px;
+}
+
+.media-page h1, h2, h3, h4, b, .media-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.media-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.media-banner-image-container {
+  flex: 1;
+  max-width: 500px;
+  margin: 20px;
+  position: relative;
+}
+
+.media-banner-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.media-banner-text-container {
+  flex: 2;
+  max-width: 600px;
+  margin: 20px;
+  color: #102245;
+  text-align: left;
+}
+
+.media-banner-text-container h1 {
+  font-size: 2.5em;
+}
+
+.media-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.media-video-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.media-video-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.media-video-container {
+  flex: 2;
+  position: relative;
+  width: 100%;
+  padding-top: 36.2%; /* 16:9 Aspect Ratio */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.media-video-container iframe,
+.media-video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* New styles for the flyer and article section cards */
+.media-section-wrapper {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-section {
+  background-color: #fff; /* White background for the section card */
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for the section card */
+  padding: 20px;
+  width: 100%;
+  max-width: 960px; /* Constrain the width similar to the video cards */
+}
+
+.flyers-section, .articles-section {
+  display: flex;
+  justify-content: center; /* Center the grid container */
+}
+
+.flyer-items, .article-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 25px;
+  justify-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.flyer-item, .article-item {
+  padding: 20px;
+  background-color: #007094;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  color: white;
+  width: 100%;
+  max-width: 360px;
+  height: 190px;
+  box-sizing: border-box;
+}
+
+.article-item img, .flyer-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.article-item a, .flyer-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.article-item a:hover, .flyer-item a:hover {
+  color: #9dbf44;
+}
+
+@media (max-width: 1024px) {
+  .flyer-items, .article-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .flyer-items, .article-items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,157 @@
+.contact-form {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.contact-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  margin: 50px auto; /* Center the form */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-form-container h1 {
+  font-size: 2.5em;
+  color: #102245;
+  margin-bottom: 20px;
+}
+
+.contact-form-container p {
+  font-size: 1.1em;
+  color: #102245;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group select,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #102245;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #102245;
+  outline: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #102245;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.contact-form .form-group input:focus ~ label,
+.contact-form .form-group select:focus ~ label,
+.contact-form .form-group textarea:focus ~ label,
+.contact-form .form-group input:not(:placeholder-shown) ~ label,
+.contact-form .form-group select:not(:placeholder-shown) ~ label,
+.contact-form .form-group textarea:not(:placeholder-shown) ~ label {
+  top: -20px;
+  left: 0;
+  color: #748a3b;
+  font-size: 12px;
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form .form-submit-button {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #102245;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  margin: 20px auto 0;
+  border: none;
+}
+
+.contact-form .form-submit-button:hover {
+  background-color: #657c2c;
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+}
+
+.contact-form .form-submit-button:active {
+  background-color: #40591b;
+  transform: scale(0.98);
+  color: rgb(255, 255, 255);
+}
+
+.contact-form .form-submit-button:focus {
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.contact-form .form-submit-button[disabled] {
+  background-color: #bbb;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 100%; /* Ensure the form container does not exceed screen width */
+  }
+
+  .contact-form-container h1 {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+
+  .contact-form-container p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
+
+  .contact-form .form-row {
+    flex-direction: column; /* Stack form fields vertically */
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure form groups take up full width on mobile */
+  }
+
+  .contact-form .form-submit-button {
+    width: 100%; /* Make the submit button full-width */
+  }
+}

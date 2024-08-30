@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+
+# Temporary audio files
+preliminary_openai_tutor/audio/
+
+# Python bytecode
+*.pyc
+__pycache__/
+preliminary_openai_tutor/__pycache__/
+
+# Temporary files
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.tmp

@@ -1,0 +1,242 @@
+.home-page {
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+.content-wrapper {
+  width: 100%; /* Allow the content wrapper to take up the full width */
+  max-width: 1400px; /* Set a max-width to limit the container's width on large screens */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Optional padding */
+  box-sizing: border-box; /* Include padding within the width */
+}
+
+.home-page h1, h2, h3, h4, b, .home-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-page p {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .home-link {
+  color: #9dbf44;
+}
+
+.home-section {
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-box {
+  background-color: #ffffff; /* White background for the box */
+  padding: 40px; /* Consistent padding */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%; /* Allow the box to take up the full width of its container */
+  margin: 0 auto 40px; /* Center the box and add space below it */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /* Vertically center content within the box */
+  max-width: 1400px; /* Set a max-width to limit the box's width on large screens */
+  box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+.home-image-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: center; /* Vertically center the image */
+}
+
+.home-image {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not overflow the container */
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow on one side */
+  object-fit: cover;
+}
+
+.home-text-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the text */
+  align-items: flex-start; /* Left-align the text elements on desktop */
+  text-align: justify; /* Justify the text */
+  padding-left: 10px;
+}
+
+.home-text-container h1 {
+  font-size: 2.5em;
+  text-align: left; /* Left-align the h1 text on desktop */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+
+.home-text-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify; /* Justify the text */
+  margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+.home-text-container ul {
+  padding-left: 0; /* Removes default padding */
+  list-style-type: disc;
+}
+
+.home-text-container li {
+  font-size: 1.1em;
+  text-align: justify; /* Ensures list items are left-aligned */
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px; /* Adds spacing between list items */
+}
+
+.home-nav-button-container {
+  display: flex;
+  justify-content: flex-start; /* Left-align the button on desktop */
+  width: 100%;
+}
+
+.home-nav-button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.impact-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home-nav-button {
+  display: inline-block;
+  width: 150px; /* Adjusted width for a larger button */
+  height: 40px; /* Height to match the original look */
+  text-align: center;
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px; /* Center text vertically */
+  cursor: pointer;
+  background-color: #102245; /* Navy blue background */
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.home-nav-button:hover {
+  background-color: #657c2c; /* Dark green background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  color: rgb(255, 255, 255); /* Keep text white on hover */
+}
+
+.home-nav-button:active {
+  background-color: #40591b; /* Even darker green when active */
+  transform: scale(0.98); /* Slightly reduce the button size on click */
+  color: rgb(255, 255, 255); /* Keep text white on active */
+}
+
+.home-nav-button:focus {
+  outline: none; /* Remove default focus outline */
+  color: rgb(255, 255, 255); /* Keep text white on focus */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%; /* Ensure section doesn't exceed screen width */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .home-box {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to start of the box */
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Adjust padding to keep content inside the box */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    max-width: 100%; /* Ensure the box takes up full width */
+  }
+
+  .home-image-container,
+  .home-text-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 0 10px; /* Prevent text from touching the edges */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+  }
+
+  .home-image-container {
+    order: -1; /* Move the image to the top */
+    width: 100%; /* Ensure the image container takes up full width */
+  }
+
+  .home-text-container {
+    order: 1; /* Move the text to the bottom */
+    width: 100%; /* Ensure the text container takes up full width */
+    padding: 10px 20px; /* Ensure padding to prevent overflow */
+    box-sizing: border-box;
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center the text horizontally */
+  }
+
+  .home-text-container h1 {
+    font-size: 2em;
+    padding: 0; /* Remove extra padding */
+    text-align: center; /* Center-align the h1 text */
+  }
+
+  .home-text-container p {
+    font-size: 1em;
+    text-align: center; /* Center the text on mobile */
+    padding-left: 0; /* Remove padding for mobile */
+    padding: 0 10px; /* Adjust padding to prevent overflow */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-bottom: 15px; /* Add space between paragraphs/list items */
+  }
+
+  .home-text-container ul {
+    padding-left: 0; /* Removes default padding */
+    list-style-type: none; /* Removes bullet points on mobile */
+  }
+
+  .home-text-container li {
+    font-size: 1em;
+    text-align: center; /* Center-align list items on mobile */
+    padding-left: 0; /* Remove padding for mobile */
+    margin-left: 0; /* Remove left margin for mobile */
+  }
+
+  .home-nav-button-container {
+    display: flex;
+    justify-content: center; /* Center the button */
+    width: 100%; /* Ensure buttons stay within screen width */
+    padding: 0 10px; /* Add padding to keep buttons within screen bounds */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .home-nav-button {
+    display: block;
+    width: 100%; /* Ensure the button takes up full width */
+    margin: 0 auto; /* Center the button horizontally */
+    margin-top: 20px; /* Add space above the button */
+  }
+}

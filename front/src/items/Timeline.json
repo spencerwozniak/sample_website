@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Foundation",
+        "subtitle": "May 2015",
+        "para": "Creation of commercializing the medical scribe concept for national physician use.",
+        "note": "Helix was founded in 2015.",
+        "icon": "rocket"
+    },
+    {
+        "id": 2,
+        "title": "Incorporation",
+        "subtitle": "January 2017",
+        "para": "First incorporated medical scribe company in Michigan.",
+        "note": "A major milestone for the company.",
+        "icon": "briefcase"
+    },
+    {
+        "id": 3,
+        "title": "Partnership",
+        "subtitle": "January 2019",
+        "para": "Partnered with GVSU",
+        "note": "A major milestone for the company.",
+        "icon": "briefcase"
+    },
+    {
+        "id": 4,
+        "title": "Expansion",
+        "subtitle": "January 2023",
+        "para": "Expanded to Florida.",
+        "note": "A major milestone for the company.",
+        "icon": "briefcase"
+    }
+]

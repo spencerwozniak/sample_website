@@ -1,0 +1,141 @@
+/* General Styles */
+.remote-scribes-page {
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+.remote-scribes-page h1, h2, h3, h4, b, .home-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.remote-scribes-page p {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Section Styles */
+.remote-scribes-section {
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.remote-scribes-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Image and Text Container Styles */
+.remote-scribes-image-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.remote-scribes-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.remote-scribes-text-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+  padding-left: 10px;
+}
+
+.remote-scribes-text-container h1 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #102245;
+}
+
+.remote-scribes-text-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #102245;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .remote-scribes-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .remote-scribes-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .remote-scribes-image-container,
+  .remote-scribes-text-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .remote-scribes-image-container {
+    order: -1;
+    width: 100%;
+  }
+
+  .remote-scribes-text-container {
+    order: 1;
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .remote-scribes-text-container h1 {
+    font-size: 2em;
+  }
+
+  .remote-scribes-text-container p {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,65 @@
+.impact-section {
+    background-color: #102245; /* Navy blue background */
+    color: white;
+    padding: 20px 20px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 40px 0;
+    transition: transform 0.2s ease-in-out; /* For hover effect */
+  }
+  
+  .impact-section:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  
+  .content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .impact-title {
+    font-size: 3.0em;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    color: #9dbf44; /* Greenish color */
+  }
+  
+  .stat-description {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-item {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

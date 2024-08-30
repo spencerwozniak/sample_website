@@ -1,0 +1,53 @@
+/* ProfilePage.css */
+
+.profile-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #2c2c2c;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page h1, .profile-page h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.profile-page .form-group, .profile-page .password-section, .profile-page .delete-account-section {
+  margin-bottom: 20px;
+}
+
+.profile-page .form-group label, .profile-page .password-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.profile-page .form-group input, .profile-page .password-section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #444;
+  color: #fff;
+}
+
+.profile-page .confirm-button {
+  background: #4caf50;
+  color: white;
+}
+
+.profile-page .cancel-button {
+  background: #f44336;
+  color: white;
+}
+
+.profile-page .course-list {
+  background: #444;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}

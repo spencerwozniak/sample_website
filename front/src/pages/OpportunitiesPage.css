@@ -1,0 +1,196 @@
+.opportunities-page {
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Optional padding */
+}
+
+.box-container { 
+  background-color: #ffffff; /* White background for the box */
+  padding: 40px; /* Consistent padding */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px; /* Ensure the box doesn’t stretch too far */
+  margin: 0 auto 40px; /* Center the box and add space below it */
+  text-align: justify; /* Align text to the left */
+}
+
+.box-container h1 {
+  color: #102245; /* Dark navy blue color for the heading */
+  font-size: 2.5em; /* Large font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+}
+
+.box-container p {
+  font-size: 1.2em; /* Slightly larger font for readability */
+  line-height: 1.6; /* Comfortable line height */
+  color: #333333; /* Dark grey color for the text */
+}
+
+.box-container ol {
+  padding-left: 20px; /* Space for the list numbers */
+  margin-top: 10px; /* Space above the list */
+}
+
+.box-container ol li {
+  font-weight: 500; /* Semi-bold font weight */
+  font-size: 1.2em; /* Slightly larger font for list items */
+  color: #102245; /* Match the color of the heading */
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.opportunities-search-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 60px;
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #c6c6c6;
+  font-size: 1em;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-select {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: #102245;
+  color: white;
+  font-weight: bold;
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9; /* Slightly lighter background for the job cards */
+  border: 1px solid #e6e6e6; /* Subtle border around the cards */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensure all content within the card is left-aligned */
+  transition: transform 0.2s ease-in-out; /* For hover effect */
+}
+
+.job-card:hover {
+  transform: scale(1.025); /* Slightly enlarge the card on hover */
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left; /* Ensure text within this container is left-aligned */
+  flex: 1; /* Allow this section to take up the remaining space */
+}
+
+.job-title{
+  color: #102245;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.job-title:hover {
+  color: #657c2c;
+}
+
+.job-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #102245;
+  text-decoration: none;
+  text-align: left; /* Ensure job title is left-aligned */
+}
+
+.job-location,
+.job-department,
+.job-type {
+  font-size: 1.1em;
+  color: #737373;
+  text-align: left; /* Ensure location, department, and job type are left-aligned */
+}
+
+.apply-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-now-button {
+  display: block;
+  position: relative;
+  width: 150px; /* Adjusted width for a larger button */
+  height: 40px; /* Height to match the original look */
+  text-align: center;
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px; /* Center text vertically */
+  cursor: pointer;
+  background-color: #102245; /* Navy blue background */
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.apply-now-button:hover {
+  background-color: #657c2c; /* Dark green background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  color: rgb(255, 255, 255); /* Keep text white on hover */
+}
+
+.apply-now-button:active {
+  background-color: #40591b; /* Even darker green when active */
+  transform: scale(0.98); /* Slightly reduce the button size on click */
+  color: rgb(255, 255, 255); /* Keep text white on active */
+}
+
+.apply-now-button:focus {
+  outline: none; /* Remove default focus outline */
+  color: rgb(255, 255, 255); /* Keep text white on focus */
+}
+
+@media (max-width: 768px) {
+  .opportunities-search-sort {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opportunities-list {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    flex-direction: column;
+  }
+
+  .apply-button {
+    margin-top: 20px;
+  }
+}

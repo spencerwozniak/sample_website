@@ -1,0 +1,127 @@
+.footer-wrapper {
+    width: 100vw; /* Ensure it takes the full width of the parent, which should be the viewport */
+    background: #007094;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    position: relative;
+    left: 0;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.footer {
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.footer-content {
+    max-width: 1200px; /* Constrain the width of the content inside the footer */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Optional padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo Styles */
+.footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 250px; /* Slightly smaller logo for mobile */
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease;
+}
+
+/* Motto Styles */
+.footer-motto {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px; /* Add some space below the motto */
+}
+
+/* Social Icons Styles */
+.footer-social {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Reduce the gap slightly for mobile */
+}
+
+.social-icons img {
+    width: auto;
+    height: 24px;
+    transition: filter 0.3s ease;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Footer Menu Styles */
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    justify-content: center;
+    gap: 15px; /* Reduce gap between menu items for better fit */
+    margin-bottom: 20px;
+}
+
+.footer-menu ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.footer-menu ul li a:hover {
+    color: #9dbf44;
+}
+
+/* Copyright Styles */
+.copyright {
+    background: #007094;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0; /* Add some padding for spacing */
+    padding-bottom: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .social-icons {
+        padding-top: 25px;
+        gap: 40px; /* Reduce the gap further for small screens */
+    }
+
+    .social-icons img {
+        width: auto;
+        height: 28px;
+        transition: filter 0.3s ease;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    }
+
+    .footer-menu ul {
+        display: none;
+    }
+
+    .footer-logo img {
+        max-width: 222px; /* Slightly smaller logo for mobile */
+    }
+}

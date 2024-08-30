@@ -1,0 +1,241 @@
+/* General Styles */
+.what-we-do-page {
+  overflow-x: hidden;
+}
+
+.what-we-do-page h1, h2, h3, h4, b, .home-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.what-we-do-page p {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Section Styles */
+.what-we-do-section {
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.what-we-do-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Image and Text Container Styles */
+.what-we-do-image-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.what-we-do-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.what-we-do-text-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+  padding-left: 10px;
+}
+
+.what-we-do-text-container h1 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #102245;
+}
+
+.what-we-do-text-container p,
+.what-we-do-text-container li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #102245;
+}
+
+.two-column-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 500px;
+}
+
+.two-column-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+}
+
+.two-column-list ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #102245; /* List text color */
+}
+
+/* Button Styles */
+.what-we-do-nav-button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #102245;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.what-we-do-nav-button:hover {
+  background-color: #657c2c;
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+}
+
+.what-we-do-nav-button:active {
+  background-color: #40591b;
+  transform: scale(0.98);
+  color: rgb(255, 255, 255);
+}
+
+.what-we-do-nav-button:focus {
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .what-we-do-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .what-we-do-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .what-we-do-image-container,
+  .what-we-do-text-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .what-we-do-image-container {
+    order: -1;
+    width: 100%;
+  }
+
+  .what-we-do-text-container {
+    order: 1;
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .what-we-do-text-container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .what-we-do-text-container p,
+  .what-we-do-text-container li {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .what-we-do-text-container ul {
+    padding-left: 0; /* Removes default padding */
+    list-style-type: none; /* Removes bullet points on mobile */
+  }
+
+  .what-we-do-text-container li {
+    font-size: 1em;
+    text-align: center; /* Center-align list items on mobile */
+    padding-left: 0; /* Remove padding for mobile */
+    margin-left: 0; /* Remove left margin for mobile */
+    font-weight: 500;
+  }
+
+  .two-column-list {
+    display: block;
+    max-width: 100%;
+  }
+
+  .two-column-list ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: inline;
+  }
+
+  .two-column-list ul:nth-child(2) li {
+    content: "";
+    white-space: pre;
+  }
+
+  .two-column-list ul:nth-child(1) li::after {
+    content: "";
+    white-space: pre;
+  }
+
+  .what-we-do-nav-button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}

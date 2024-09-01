@@ -40,8 +40,8 @@ const Navigation = () => {
                     <section className="nav-column">
                         <Link to="/what-we-do" className="nav-column__heading">What We Do</Link>
                         <ul className="nav-column__links">
-                            <li><Link to="/what-we-do/live-scribes" className="nav-column__link">Live Scribes</Link></li>
-                            <li><Link to="/what-we-do/remote-scribes" className="nav-column__link">Remote Scribes</Link></li>
+                            <li><Link to="/what-we-do/live-scribes" className="nav-column__link">Physicians</Link></li>
+                            <li><Link to="/what-we-do/remote-scribes" className="nav-column__link">Physician Associates</Link></li>
                             <li><Link to="/contact" className="nav-column__link">Contact Us</Link></li>
                         </ul>
                     </section>

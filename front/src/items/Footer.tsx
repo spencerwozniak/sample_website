@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                         <div className="footer-logo">
                             <a href="/"><img src={HelixLogoWhite} className="img-fluid" alt="Helix logo" /></a>
                         </div>
-                        <p className='footer-motto'>Built by physicians. For physicians.</p>
+                        <p className='footer-motto'>Your company motto.</p>
                         <div className="footer-social">
                             <div className="social-icons">
                                 <a href="https://www.facebook.com/helixscribes/" target="_blank"><img src={FacebookIcon} alt="Facebook" /></a>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div className="copyright">
-                        <p>Copyright &copy; 2024 Helix Scribe Solutions</p>
+                        <p>Copyright &copy; 2024 Healthcare Company</p>
                     </div>
                 </div>
             </footer>

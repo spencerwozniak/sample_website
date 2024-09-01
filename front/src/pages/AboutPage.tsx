@@ -25,10 +25,10 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About Us - Helix Scribe Solutions</title>
+        <title>About Us - Healthcare Company</title>
         <meta name="description" content="Learn more about Helix Scribe Solutions, our mission, history, and team of highly qualified medical scribes." />
         <meta name="keywords" content="about us, Helix, medical scribes, healthcare solutions, mission, history, team" />
-        <meta property="og:title" content="About Us - Helix Scribe Solutions" />
+        <meta property="og:title" content="About Us - Healthcare Company" />
         <meta property="og:description" content="Discover the mission, history, and team behind Helix Scribe Solutions." />
         <meta property="og:image" content="URL_to_a_representative_image" />
         <meta property="og:url" content="https://www.helixscribes.com/about" />
@@ -40,7 +40,7 @@ const AboutPage = () => {
       <header className="about-header">
         <Header 
           title="About Us"
-          subtitle="Helix Scribe Solutions provides highly qualified and trained medical scribes to various medical settings."
+          subtitle="We provide highly qualified and trained medical professionals."
           imageSrc={aboutBanner}
         />
       </header>
@@ -53,8 +53,7 @@ const AboutPage = () => {
             </div>
             <div className="about-text-container">
               <h1>Our Mission</h1>
-              <p>Our mission is very simple: to make providers more efficient. We take on the documentation and other administrative tasks so providers can focus on their patients. This results in consistent documentation standards, happier providers, and happier patients.</p>
-              <p>Our goal, while lofty, is achievable: to provide best-in-class scribe service to our clients. We do not want to be the biggest scribe company, but we will be the best.</p>
+              <p>Our mission is to provide compassionate, patient-centered care through a team of dedicated physicians and physician assistants committed to excellence in healthcare. We strive to enhance the well-being of our community by delivering high-quality, accessible, and innovative medical services. Through continuous learning, collaboration, and the use of advanced medical technologies, we aim to empower our patients with the knowledge and support they need to achieve optimal health outcomes.</p>
               <a href='/about/mission' className="about-nav-button"><b>Read more</b></a>
             </div>
           </div>
@@ -67,8 +66,7 @@ const AboutPage = () => {
             </div>
             <div className="about-text-container">
               <h1>Our History</h1>
-              <p>Helix Scribe Solutions began when a group of forward-thinking physicians saw the impact the introduction of the EMR was having around the nation on provider efficiency metrics.</p>
-              <p>After reviewing companies offering scribe services, they decided to build their own organization with a focus on robust training, high-caliber scribes, and a commitment to excellence. The first scribes came online during the summer of 2015 and Helix has been expanding ever since.</p>
+              <p>Starting as a small practice with a single physician, we have grown into a multidisciplinary medical group that includes a diverse team of physicians and physician assistants. Over the years, we have expanded our services to meet the evolving needs of our patients, always maintaining our commitment to quality care and patient satisfaction. Today, we are proud to be a trusted healthcare provider, known for our expertise, personalized approach, and unwavering commitment to improving health outcomes.</p>
               <a href='/about/history' className="about-nav-button"><b>Learn more</b></a>
             </div>
           </div>

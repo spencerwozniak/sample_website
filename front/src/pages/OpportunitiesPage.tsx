@@ -34,11 +34,12 @@ function OpportunitiesPage() {
 
   return (
     <div className="opportunities-page">
+
       <Helmet>
-        <title>Job Opportunities - Helix Scribe Solutions</title>
+        <title>Job Opportunities - Healthcare Company</title>
         <meta name="description" content="Explore current job openings at Helix Scribe Solutions. Find your next career opportunity and apply today!" />
         <meta name="keywords" content="scribe, jobs, apply, application, hiring, job opportunities, careers, healthcare jobs, medical scribe jobs, Helix Scribe Solutions, employment" />
-        <meta property="og:title" content="Job Opportunities - Helix Scribe Solutions" />
+        <meta property="og:title" content="Job Opportunities - Healthcare Company" />
         <meta property="og:description" content="Explore job opportunities at Helix Scribe Solutions. Start your career in healthcare today." />
         <meta property="og:image" content="URL_to_a_representative_image" />
         <meta property="og:url" content="https://www.helixscribes.com/opportunities" />
@@ -61,18 +62,7 @@ function OpportunitiesPage() {
 
         <div className="box-container" data-aos="fade-up">
           <h1>Join our team!</h1>
-          <p>Get a leg up in your journey of furthering your medical career and join Helix! Our job openings are great opportunities for those looking for positions in the medical field. We complete in-house training for all positions, teaching you how to operate in fast-paced and exciting environments. Learn from medical professionals every day and gain valuable experience in the clinical settings we service.</p>
-          <p>Helix recognizes that the healthcare industry is ever-changing and we strive to stay up-to-date on the opportunities that we can provide. We are in search of highly-motivated individuals that connect with our values:</p>
-          <ol className="values-list">
-            <li>Excellence</li>
-            <li>Continuous Improvement</li>
-            <li>Entrepreneurship</li>
-            <li>Integrity</li>
-            <li>Education</li>
-            <li>Innovation</li>
-            <li>Stewardship</li>
-          </ol>
-          <p>As a valued partner in providing excellent medical care, we have high expectations of our team members. Our team is family and we strive to help you engage and learn from the work you complete. Helix has your future interests in mind and are happy to work with you to excel in the work being completed, but also connect with the field of medicine and provide unique opportunities to help you further your career.</p>
+          <p>Are you a passionate physician or physician associate dedicated to making a difference in patient care? We are committed to fostering a collaborative and innovative environment where your expertise can thrive. Join our team of compassionate professionals and be a part of a dynamic healthcare community that values excellence, continuous learning, and patient-centered care. Together, we can make a lasting impact on the health and well-being of our community.</p>
         </div>
 
       </section>

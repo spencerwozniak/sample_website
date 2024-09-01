@@ -11,10 +11,10 @@ function ContactPage() {
   return (
     <div className="contact-us-page">
       <Helmet>
-        <title>Contact Us - Helix Scribe Solutions</title>
+        <title>Contact Us - Healthcare Company</title>
         <meta name="description" content="Get in touch with Helix Scribe Solutions. Contact us for more information on our services or any inquiries." />
         <meta name="keywords" content="contact, Helix Scribe Solutions, medical scribe services, inquiries" />
-        <meta property="og:title" content="Contact Us - Helix Scribe Solutions" />
+        <meta property="og:title" content="Contact Us - Healthcare Company" />
         <meta property="og:description" content="Contact Helix Scribe Solutions for more information or inquiries." />
         <meta property="og:image" content="URL_to_a_representative_image" />
         <meta property="og:url" content="https://www.helixscribes.com/contact" />

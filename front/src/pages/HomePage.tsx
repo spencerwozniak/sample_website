@@ -27,10 +27,10 @@ function HomePage() {
   return (
     <div className="home-page">
       <Helmet>
-        <title>Helix Scribe Solutions - Medical Scribe Services</title>
+        <title>Healthcare Company</title>
         <meta name="description" content="Helix Scribe Solutions provides medical scribe services for physician groups, healthcare systems, and hospitals in Michigan." />
         <meta name="keywords" content="scribe, medical scribe, scribe services, medical scribe services, healthcare, EMR systems, Helix, helix, solutions, physician groups, Michigan" />
-        <meta property="og:title" content="Helix Scribe Solutions - Medical Scribe Services" />
+        <meta property="og:title" content="Healthcare Company" />
         <meta property="og:description" content="Built by physicians. For physicians. We provide medical scribe services across various EMR systems." />
         <meta property="og:image" content="URL_to_a_representative_image" />
         <meta property="og:url" content="https://www.helixscribes.com" />
@@ -42,8 +42,8 @@ function HomePage() {
       
       <header className="home-header">
         <Header 
-          title="Helix Scribe Solutions"
-          subtitle="Built by physicians. For physicians."
+          title="Healthcare Company"
+          subtitle="Your company motto."
           imageSrc={Scribes1}
         />
       </header>
@@ -55,9 +55,9 @@ function HomePage() {
               <img src={handsBanner} alt="Healthcare professionals holding hands" loading="lazy" className="home-image" />
             </div>
             <div className="home-text-container">
-              <h1>Helix is Here to Help</h1>
-              <p>Helix Scribe Solutions is one of the leading providers of medical scribe services for physician groups, healthcare systems, and hospitals in Michigan.</p>
-              <p>We are proficient in multiple EMR systems including EPIC, Cerner, Meditech, and Nextgen. Our team is highly adaptable to almost any EMR system.</p>
+              <h1>We are here to Help</h1>
+              <p>Our company is one of the leading providers of medical services for healthcare systems and hospitals in California.</p>
+              <p>We aim to achieve better patient outcomes through medical excellence and compassionate patient care.</p>
               <Link to='/what-we-do' className="home-nav-button">Learn more</Link>
             </div>
           </div>
@@ -66,12 +66,11 @@ function HomePage() {
         <section className="home-section">
           <div className="home-box" data-aos="fade-up" data-aos-delay="100">
             <div className="home-text-container">
-              <h1>Why Helix?</h1>
+              <h1>Why us?</h1>
               <ul>
-                <li>Helix has a robust training program that prepares scribes for your clinical environment.</li>
-                <li>Helix implements an auditing program that involves monthly chart reviews and one-on-one feedback.</li>
-                <li>Helix requires quarterly continuing medical education modules to ensure consistent quality.</li>
-                <li>Helix averages over 99% shift coverage across all clients.</li>
+                <li>We implement a robust training program that tailors providers for your clinical environment.</li>
+                <li>We requires quarterly continuing medical education modules to ensure consistent quality.</li>
+                <li>We average over 99% shift coverage across all clients.</li>
               </ul>
               <Link to='/about' className="home-nav-button">Learn more</Link>
             </div>

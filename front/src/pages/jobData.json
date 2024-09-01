@@ -1,46 +1,142 @@
 [
-    {
-      "title": "Medical Scribe - Emergency Department",
-      "location": "Kalamazoo, MI",
-      "department": "SWMES",
+  {
+      "title": "Physician - Emergency Medicine",
+      "location": "Los Angeles, CA",
+      "department": "Emergency Department",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/emergency-medicine-physician"
+  },
+  {
+      "title": "Physician Associate - Cardiology",
+      "location": "San Francisco, CA",
+      "department": "Cardiology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/cardiology-pa"
+  },
+  {
+      "title": "Physician - Gastroenterology",
+      "location": "San Diego, CA",
+      "department": "Gastroenterology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/gastroenterology-physician"
+  },
+  {
+      "title": "Physician Associate - Urology",
+      "location": "Sacramento, CA",
+      "department": "Urology",
       "jobType": "Part Time",
-      "applyLink": "https://helixscribes.applytojob.com/apply/yR8UbwvXsE/Medical-Scribe-Emergency-Department?source=Our%20Career%20Page%20Widget"
-    },
-    {
-      "title": "Medical Scribe - Emergency Department",
-      "location": "Owosso, MI",
-      "department": "ECS",
+      "applyLink": "https://example.com/apply/urology-pa"
+  },
+  {
+      "title": "Physician - Pulmonology",
+      "location": "Fresno, CA",
+      "department": "Pulmonology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/pulmonology-physician"
+  },
+  {
+      "title": "Physician Associate - Neurology",
+      "location": "Irvine, CA",
+      "department": "Neurology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/neurology-pa"
+  },
+  {
+      "title": "Physician - Infectious Disease",
+      "location": "Long Beach, CA",
+      "department": "Infectious Disease",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/infectious-disease-physician"
+  },
+  {
+      "title": "Physician Associate - Endocrinology",
+      "location": "Oakland, CA",
+      "department": "Endocrinology",
       "jobType": "Part Time",
-      "applyLink": "https://helixscribes.applytojob.com/apply/j4IyiOiwVQ/Medical-Scribe-Emergency-Department?source=Our%20Career%20Page%20Widget"
-    },
-    {
-      "title": "Medical Scribe - ENT",
-      "location": "Grand Rapids, MI",
-      "department": "GRENT",
-      "jobType": "Full Time / Part Time",
-      "applyLink": "https://helixscribes.applytojob.com/apply/v0aQWJSo2E/Medical-Scribe-ENT?source=Our%20Career%20Page%20Widget"
-    },
-    {
-        "title": "Medical Scribe - Neuro/Spine Surgery",
-        "location": "Grand Rapids, MI",
-        "department": "CWH",
-        "jobType": "Full Time / Part Time",
-        "applyLink": "https://helixscribes.applytojob.com/apply/bEl0eH7AQE/Medical-Scribe-NeuroSpine-Surgery?source=Our%20Career%20Page%20Widget"
-    },
-    {
-        "title": "Medical Scribe - Orthopedics (Hand Surgery)",
-        "location": "Grand Rapids, MI",
-        "department": "CWH",
-        "jobType": "Full Time / Part Time",
-        "applyLink": "https://helixscribes.applytojob.com/apply/zzhRrXcygZ/Medical-Scribe-Orthopedics-Hand-Surgery?source=Our%20Career%20Page%20Widget"
-    },
-    {
-        "title": "Medical Scribe - Orthopedics (Sports or F&A)",
-        "location": "Grand Rapids, MI",
-        "department": "CWH",
-        "jobType": "Full Time / Part Time",
-        "applyLink": "https://helixscribes.applytojob.com/apply/oBE8MOF9b0/Medical-Scribe-Orthopedics-Sports-Or-FA?source=Our%20Career%20Page%20Widget"
-    }
-      
+      "applyLink": "https://example.com/apply/endocrinology-pa"
+  },
+  {
+      "title": "Physician - Nephrology",
+      "location": "Santa Barbara, CA",
+      "department": "Nephrology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/nephrology-physician"
+  },
+  {
+      "title": "Physician Associate - Gastroenterology",
+      "location": "Santa Monica, CA",
+      "department": "Gastroenterology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/gastroenterology-pa"
+  },
+  {
+      "title": "Physician - Cardiology",
+      "location": "Bakersfield, CA",
+      "department": "Cardiology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/cardiology-physician"
+  },
+  {
+      "title": "Physician Associate - Emergency Medicine",
+      "location": "San Jose, CA",
+      "department": "Emergency Department",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/emergency-medicine-pa"
+  },
+  {
+      "title": "Physician - Urology",
+      "location": "Palm Springs, CA",
+      "department": "Urology",
+      "jobType": "Part Time",
+      "applyLink": "https://example.com/apply/urology-physician"
+  },
+  {
+      "title": "Physician Associate - Pulmonology",
+      "location": "Riverside, CA",
+      "department": "Pulmonology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/pulmonology-pa"
+  },
+  {
+      "title": "Physician - Neurology",
+      "location": "Anaheim, CA",
+      "department": "Neurology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/neurology-physician"
+  },
+  {
+      "title": "Physician Associate - Infectious Disease",
+      "location": "Modesto, CA",
+      "department": "Infectious Disease",
+      "jobType": "Part Time",
+      "applyLink": "https://example.com/apply/infectious-disease-pa"
+  },
+  {
+      "title": "Physician - Endocrinology",
+      "location": "San Bernardino, CA",
+      "department": "Endocrinology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/endocrinology-physician"
+  },
+  {
+      "title": "Physician Associate - Nephrology",
+      "location": "Ventura, CA",
+      "department": "Nephrology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/nephrology-pa"
+  },
+  {
+      "title": "Physician - Gastroenterology",
+      "location": "Chula Vista, CA",
+      "department": "Gastroenterology",
+      "jobType": "Full Time",
+      "applyLink": "https://example.com/apply/gastroenterology-physician"
+  },
+  {
+      "title": "Physician Associate - Cardiology",
+      "location": "Santa Clara, CA",
+      "department": "Cardiology",
+      "jobType": "Part Time",
+      "applyLink": "https://example.com/apply/cardiology-pa"
+  }
 ]
-  

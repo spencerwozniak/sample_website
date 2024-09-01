@@ -25,12 +25,13 @@
 }
 
 .team-card-image {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Maintain full width of the container */
+  height: 444px; /* Set a fixed height for consistency */
   border-radius: 15px; /* Rounded corners for the image */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow on the image */
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image covers the specified width and height without distortion */
 }
+
 
 .team-card-content {
   text-align: center;

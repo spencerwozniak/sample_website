@@ -107,8 +107,8 @@ const ContactForm: React.FC = () => {
   return (
     <div className="contact-form">
       <div className="contact-form-container" data-aos="fade-up" data-aos-delay="500">
-        <h1>See How Helix Can Help</h1>
-        <p>Get more information on how our scribes can help you.</p>
+        <h1>See How We Can Help</h1>
+        <p>Get more information on how we can help you.</p>
         <br/>
         <form className="contact-form">
           <div className="form-row">

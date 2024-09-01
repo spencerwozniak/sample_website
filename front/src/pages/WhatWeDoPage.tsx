@@ -9,7 +9,7 @@ import './WhatWeDoPage.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import wwdBanner from '../assets/what_we_do_banner.jpg';
+import wwdBanner from '../assets/scribe_working_1.jpg';
 import liveScribeImage from '../assets/live_scribe.jpg';
 import remoteScribesImage from '../assets/scribe_working_2.jpg';
 import locationsImage from '../assets/gr_medical_mile.jpg';
@@ -26,10 +26,10 @@ function WhatWeDoPage() {
   return (
     <div className="what-we-do-page">
       <Helmet>
-        <title>What We Do - Helix Scribe Solutions</title>
+        <title>What We Do - Healthcare Company</title>
         <meta name="description" content="Learn more about the scribe and medical services provided by Helix Scribe Solutions, including live and remote scribes, specialties, and other medical professionals." />
         <meta name="keywords" content="scribe services, live scribes, remote scribes, healthcare, medical professionals, Helix, specialties, locations, professional" />
-        <meta property="og:title" content="What We Do - Helix Scribe Solutions" />
+        <meta property="og:title" content="What We Do - Healthcare Company" />
         <meta property="og:description" content="Helix Scribe Solutions offers a range of scribe and medical services tailored to your healthcare needs." />
         <meta property="og:image" content="URL_to_a_representative_image" />
         <meta property="og:url" content="https://www.helixscribes.com/what-we-do" />
@@ -40,8 +40,8 @@ function WhatWeDoPage() {
       <Navigation />
       <header className='what-we-do-header'>
         <Header 
-          title="We provide scribes!"
-          subtitle="and other medical professionals"
+          title="We provide healthcare!"
+          subtitle="To advance patient care."
           imageSrc={wwdBanner}
         />
       </header>
@@ -53,8 +53,8 @@ function WhatWeDoPage() {
               <img src={liveScribeImage} alt="Live Scribes" className="what-we-do-image" />
             </div>
             <div className="what-we-do-text-container">
-              <h1>Live Scribes</h1>
-              <p>Highly trained professional scribes on-site at service location creating and documenting all information necessary in the EMR. This option is ideal for health settings requiring a large number of shifts covered or where the environment requires the scribe to be physically present for the patient encounter.</p>
+              <h1>Physicians</h1>
+              <p>Highly trained professional physicians on-site at service locations providing comprehensive patient care and making critical decisions. This option is ideal for healthcare settings requiring a high volume of shifts or where the environment demands the physician's direct presence to ensure optimal patient outcomes and timely medical interventions.</p>
               <a href='/what-we-do/live-scribes' className='what-we-do-nav-button'><b>Learn more</b></a>
             </div>
           </div>
@@ -66,8 +66,8 @@ function WhatWeDoPage() {
               <img src={remoteScribesImage} alt="Remote Scribes" className="what-we-do-image" />
             </div>
             <div className="what-we-do-text-container">
-              <h1>Remote Scribes</h1>
-              <p>Helix Remote Scribes are designed for locations that require intermittent or limited coverage where using a live scribe is not an option. Using only Helix Certified Medical Scribes based in our office, the remote scribe provides scribe service to physicians anywhere in the United States. Remote EMR access and a strong internet connection are required.</p>
+              <h1>Physician Associates (PAs)</h1>
+              <p>Highly trained professional physician associates on-site at service locations, providing essential support to physicians and delivering patient care. This option is ideal for healthcare settings requiring extensive coverage or where the environment benefits from having a physician associate present to assist with clinical tasks, patient management, and medical procedures.</p>
               <a href='/what-we-do/remote-scribes' className='what-we-do-nav-button'><b>Learn more</b></a>
             </div>
           </div>
@@ -80,40 +80,21 @@ function WhatWeDoPage() {
             </div>
             <div className="what-we-do-text-container">
               <h1>Locations & Specialties</h1>
-              <p>Each provider receives tailored service to best meet their needs. While we started in the Emergency Department, we are also proficient in:</p>
+              <p>Each client receives customized services designed to meet their specific needs. While our roots are in the Emergency Department, our expertise extends across various specialties, including:</p>
               <div className="two-column-list">
                 <ul>
-                  <li>Primary Care</li>
+                  <li>Gastroenterology</li>
                   <li>Cardiology</li>
                   <li>Urology</li>
-                  <li>ENT</li>
+                  <li>Pulmonology</li>
                 </ul>
                 <ul>
-                  <li>Pain Management</li>
-                  <li>Neuro/Spine Surgery</li>
-                  <li>Oncology</li>
-                  <li>Orthopedics</li>
+                  <li>Nephrology</li>
+                  <li>Neurology</li>
+                  <li>Infectious Disease</li>
+                  <li>Endocrinology</li>
                 </ul>
               </div>
-              <p>Have a unique specialty? We can learn that too.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="what-we-do-section" data-aos="fade-up" data-aos-delay="300">
-          <div className="what-we-do-box">
-            <div className="what-we-do-image-container">
-              <img src={opportunitiesImage} alt="Other Opportunities" className="what-we-do-image" />
-            </div>
-            <div className="what-we-do-text-container">
-              <h1>Other Medical Professionals</h1>
-              <p>We are always working to find what opportunities allow for medical professionals and organizations to grow and thrive. Aside from medical scribes, we also offer:</p>
-              <ul>
-                <li>Cardiac telemetry services</li>
-                <li>Patient safety attendants</li>
-                <li>Administrative assistance</li>
-                <li>Efficiency consultation</li>
-              </ul>
             </div>
           </div>
         </section>

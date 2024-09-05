@@ -134,36 +134,62 @@ course/                         # Root directory
 
 ## Ideas
 
-### Pretty pages
+### Improving Page Design
 
-See https://freefrontend.com/css-code-examples/
+One of the main goals for this project is to create a visually appealing and professional-looking website. The pages, especially key ones like **HomePage**, **AboutUs**, **ContactUs**, and **CoursesPage**, should be designed with modern aesthetics in mind.
 
-HomePage / AboutUs / ContactUs / CoursesPage / NEW PAGES
-- Add more images, scroll down through
-- I want these pages to look like a modern website
-- Think about what we might want on these pages, and what other pages we might want (e.g. AboutUs, ContactUs are just there as placeholders for now. We can make these anything we want.)
+To start with, you can explore creative ideas for web design by browsing through examples and templates available on [FreeFrontend](https://freefrontend.com/css-code-examples/). This website offers a variety of CSS and HTML design examples that can serve as inspiration for styling and enhancing your own pages.
 
-See these websites for **artistic inspiration**:
-- https://robinhood.com/us/en/
-- https://wepresent.wetransfer.com/
-- https://www.thisiscolossal.com/
-- https://mymodernmet.com/
-- https://www.zariaforman.com/drawings
-- https://www.louisehourcade.com/copie-de-qui-suis-je
-- https://www.charlypalmer.com/
-- https://demos.creative-tim.com/material-kit-material-ui-v4/?_ga=2.182095975.1991156074.1719462591-1272164145.1719462591#/
-- https://demos.creative-tim.com/material-kit-react/?_ga=2.58760429.1991156074.1719462591-1272164145.1719462591#/presentation
+#### Key Design Tips:
+- **Add more images**: Modern websites heavily rely on visual content. Consider using high-quality images that complement your brand or purpose. These images can be used as page backgrounds, featured content, or within sections to break up text.
+- **Smooth scrolling and animations**: Implement subtle scroll animations, hover effects, and transitions to give the website a polished look. These effects create a more interactive and engaging user experience.
+- **Modern layouts**: Use flexible, grid-based layouts that adapt well to different screen sizes (responsive design). The pages should look great on both desktops and mobile devices.
+- **Typography**: Choose clean, readable fonts that align with the aesthetic you're aiming for. You can use Google Fonts for a wide selection of fonts, or even custom fonts for a unique feel.
 
-This may involve more tutorials, messing with CSS, etc. Spencer is focused on the functionality. Brady will figure this out.
-- Make AudioPlayer appear like the Siri logo or something, where it looks more like an AI is speaking to you.
-- CSS styling for everything
-- Make shit look cool.
+As you work on your website, also consider what additional pages might be useful to include. For example, the **AboutUs** and **ContactUs** pages are placeholders that can be expanded with more specific information about your brand, mission, or team. The **CoursesPage** could feature a detailed course catalog, while **NEW PAGES** could include sections like FAQs, Testimonials, or a Services Overview.
 
-#### Could add a blog / reviews section
-- A section where users can talk to each other, we can chime in, etc.
-- Customer testimonials (need to get these first)
-- Could have blog posts by us (for artistic inspiration, see https://stanmed.stanford.edu/translating-ai-concepts-into-innovations/)
-- Could be a way for us to run blog posts aside from just the course as well, could give thoughts on AI, etc?
+Here are some websites you can check out for **artistic inspiration**:
+- [Robinhood](https://robinhood.com/us/en/): Clean, professional design with modern UI elements.
+- [WePresent](https://wepresent.wetransfer.com/): Creative and visually immersive with bold imagery and strong use of white space.
+- [This is Colossal](https://www.thisiscolossal.com/): A blend of creative content and artistic presentation, using media to tell stories.
+- [My Modern Met](https://mymodernmet.com/): Art-focused, with elegant image grids and thoughtful typography.
+- [Zaria Forman](https://www.zariaforman.com/drawings): Minimalistic design with a focus on impactful images.
+- [Louise Hourcade](https://www.louisehourcade.com/copie-de-qui-suis-je): Focus on personal branding with high-quality visuals and clean layouts.
+- [Charly Palmer](https://www.charlypalmer.com/): Beautiful image-heavy design for showcasing art and creative work.
+- [Material Kit UI](https://demos.creative-tim.com/material-kit-material-ui-v4/): Excellent for modern UI design with React and Material UI components.
+- [Material Kit React](https://demos.creative-tim.com/material-kit-react/): A React-based version of the Material Kit UI, great for adding functional, modern design elements to your project.
+
+#### CSS and Aesthetic Enhancements:
+To achieve the desired look, you’ll likely need to spend time working on CSS and exploring different styles. Learning advanced CSS techniques, such as **flexbox**, **grid layouts**, and **CSS animations**, will help create a polished and professional look for your website. Consider adding:
+- **Hover effects** on buttons and links to give them a more interactive feel.
+- **Parallax scrolling effects** to make certain sections stand out as users scroll through the page.
+- **Animated transitions** between sections or pages to create a smooth and modern browsing experience.
+
+Spencer is focusing on functionality, but there are plenty of design-related enhancements that could be explored. You may want to dive deeper into these aesthetic aspects, including:
+- Refining the CSS styling across the board, ensuring consistency, and creating a cohesive design language throughout the site.
+- Overall, focus on making the website look **cool** and professional while keeping it clean and easy to navigate.
+
+### Adding a Blog/Reviews Section
+
+Another idea to enhance the user experience is to create a blog or reviews section. This can add value to the website by encouraging user interaction and engagement. A blog can serve as a space to share updates, thoughts, and news, while a reviews section can help establish credibility through testimonials.
+
+#### Features for a Blog/Reviews Section:
+- **User Interaction**: Create a section where users can leave comments, reviews, or feedback about the website or services offered. This could be a great way to build community engagement.
+- **Testimonials**: Display customer or user testimonials to add trust and authenticity. You’ll need to gather these first, but once you have them, they can be featured prominently on the site (e.g., on the **HomePage** or **AboutUs** page).
+- **Blog Posts**: You could write blog posts about various topics. For example:
+  - Updates on website or company news.
+  - Insights on your work with AI, web development, or other technical topics relevant to your audience.
+  - Personal thoughts or explorations of modern design, technology, and how they intersect with your work.
+  - For artistic inspiration, check out [Stanford Medicine's blog on AI innovations](https://stanmed.stanford.edu/translating-ai-concepts-into-innovations/).
+
+This blog section could also be a creative space where you and your team discuss tech trends or insights related to AI, web development, and any new technologies you're exploring.
+
+By including a blog and reviews section, you can foster more **user interaction**, create a sense of community, and provide a dynamic content hub that’s frequently updated. This can keep users engaged, returning to the site to check for new posts, reviews, or testimonials.
+
+### Additional Ideas:
+- **FAQ Section**: Add a **Frequently Asked Questions (FAQ)** page to address common queries or concerns about your services or content.
+- **Newsletter Signup**: Add a newsletter signup form to collect user emails and keep them updated with new blog posts or services.
+- **Analytics Integration**: Consider integrating tools like **Google Analytics** to track user behavior, helping you understand which parts of the website are most engaging.
 
 ## Using GitHub
 

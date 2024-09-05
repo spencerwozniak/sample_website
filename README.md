@@ -1,20 +1,33 @@
 # Example Website
 
-This repository contains all the code you need to start developing your own website with a React + TypeScript front-end and Python + Flask back-end.
+Welcome to the **Example Website** repository! This project contains all the code you need to develop your own website with a **React + TypeScript front-end** and a **Python + Flask back-end**. Whether you're building a personal portfolio or developing a full-scale web app, this repository provides a structured starting point to help you get started quickly.
 
-[Fork the repository to start working on your own project](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+### How to Get Started
+
+If you're planning to develop your own website based on this project, the first step is to **fork** this repository to your own GitHub account. Forking creates your own copy of the project where you can freely experiment, add features, and customize the code.
+
+[Click here for instructions on how to fork a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
+
+Once you've forked the repository, clone it to your local machine using:
+
+```bash
+git clone https://github.com/your-username/example-website.git
+cd example-website
+```
+
+Now you're ready to start working on your own project! Follow the steps below to set up the front end and back end, and start developing.
 
 ## Table of Contents
 
 - [Directory Structure](#directory-structure)
-- [Ideas](#ideas)
+- [Setting Up and Running the Front End](#setting-up-and-running-the-front-end)
+- [Setting Up and Running the Back End](#setting-up-and-running-the-back-end)
 - [Using GitHub](#using-github)
-- [Front End Setup and Usage](#front-end-setup-and-usage)
-- [Back End Setup and Usage](#back-end-setup-and-usage)
+- [Ideas for Expanding the Project](#ideas-for-expanding-the-project)
 
 ## Directory Structure
 
-Here’s a brief overview of the directory structure. Note that you may want to delete files, add files, or modify files tailored to your specific use case.
+This is a high-level overview of the directory structure. It shows where important files are located and gives some guidance on how you might want to modify the code. You can customize or remove files based on the needs of your project.
 
 ```
 course/                         # Root directory

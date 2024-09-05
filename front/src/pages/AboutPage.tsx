@@ -85,19 +85,6 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="about-section" data-aos="fade-up" data-aos-delay="300">
-          <div className="about-box">
-            <div className="about-text-container">
-              <h1>What is a medical scribe?</h1>
-              <p>"A documentation assistant or scribe may be an unlicensed, certified, (MA, ophthalmic tech) or licensed person (RN, LPN, PA) who provides documentation assistance to a physician or other licensed practitioner (such as a nursing practitioner) consistent with the roles and responsibilities defined in the job description, and within the scope of his or her certification or licensure." - <a href='https://www.jointcommission.org/standards/standard-faqs/nursing-care-center/record-of-care-treatment-and-services-rc/000002210/' className="about-link" target="_blank"><b>The Joint Commission.</b></a></p>
-              <p>Informally, the medical scribe is there to make providers (and others) more efficient. Their job is to handle the data entry so that the provider can focus on the patient. Having a scribe allows the provider to cognitively offload the more mundane parts of their job and focus on medical decision-making and diagnosis.</p>
-            </div>
-            <div className="about-image-container">
-              <img src={ScribeWorking1} alt="What is a medical scribe?" loading="lazy" className="about-image" />
-            </div>
-          </div>
-        </section>
       </main>
 
       <ContactForm />

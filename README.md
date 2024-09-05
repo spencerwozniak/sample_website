@@ -1,6 +1,6 @@
-# Example Website
+# Sample Website
 
-Welcome to the **Example Website** repository! This project contains all the code you need to develop your own website with a **React + TypeScript front-end** and a **Python + Flask back-end**. Whether you're building a personal portfolio or developing a full-scale web app, this repository provides a structured starting point to help you get started quickly.
+Welcome to the **Sample Website** repository! This project contains all the code you need to develop your own website with a **React + TypeScript front-end** and a **Python + Flask back-end**. Whether you're building a personal portfolio or developing a full-scale web app, this repository provides a structured starting point to help you get started quickly.
 
 ### How to Get Started
 

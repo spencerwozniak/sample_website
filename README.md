@@ -140,6 +140,8 @@ One of the main goals for this project is to create a visually appealing and pro
 
 To start with, you can explore creative ideas for web design by browsing through examples and templates available on [FreeFrontend](https://freefrontend.com/css-code-examples/). This website offers a variety of CSS and HTML design examples that can serve as inspiration for styling and enhancing your own pages.
 
+Moreover, if you find a website you like, you can often **Inspect Element** on the page to find the HTML and CSS used. This might not be legal, but you can copy and paste the code into ChatGPT and ask it to design elements with a similar appearance.
+
 #### Key Design Tips:
 - **Add more images**: Modern websites heavily rely on visual content. Consider using high-quality images that complement your brand or purpose. These images can be used as page backgrounds, featured content, or within sections to break up text.
 - **Smooth scrolling and animations**: Implement subtle scroll animations, hover effects, and transitions to give the website a polished look. These effects create a more interactive and engaging user experience.
@@ -150,14 +152,9 @@ As you work on your website, also consider what additional pages might be useful
 
 Here are some websites you can check out for **artistic inspiration**:
 - [Robinhood](https://robinhood.com/us/en/): Clean, professional design with modern UI elements.
-- [WePresent](https://wepresent.wetransfer.com/): Creative and visually immersive with bold imagery and strong use of white space.
-- [This is Colossal](https://www.thisiscolossal.com/): A blend of creative content and artistic presentation, using media to tell stories.
-- [My Modern Met](https://mymodernmet.com/): Art-focused, with elegant image grids and thoughtful typography.
-- [Zaria Forman](https://www.zariaforman.com/drawings): Minimalistic design with a focus on impactful images.
-- [Louise Hourcade](https://www.louisehourcade.com/copie-de-qui-suis-je): Focus on personal branding with high-quality visuals and clean layouts.
-- [Charly Palmer](https://www.charlypalmer.com/): Beautiful image-heavy design for showcasing art and creative work.
-- [Material Kit UI](https://demos.creative-tim.com/material-kit-material-ui-v4/): Excellent for modern UI design with React and Material UI components.
 - [Material Kit React](https://demos.creative-tim.com/material-kit-react/): A React-based version of the Material Kit UI, great for adding functional, modern design elements to your project.
+- [Slider Revolution](https://www.sliderrevolution.com/design/innovative-creative-websites/): "The most innovative and creative websites you just have to see"
+- [PoolSuite](https://poolsuite.net/): Retro design with a lot of interactive elements
 
 #### CSS and Aesthetic Enhancements:
 To achieve the desired look, you’ll likely need to spend time working on CSS and exploring different styles. Learning advanced CSS techniques, such as **flexbox**, **grid layouts**, and **CSS animations**, will help create a polished and professional look for your website. Consider adding:

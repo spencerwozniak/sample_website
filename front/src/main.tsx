@@ -15,8 +15,6 @@ const MissionPage = lazy(() => import('./pages/MissionPage'));
 const HistoryPage = lazy(() => import('./pages/HistoryPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const WhatWeDoPage = lazy(() => import('./pages/WhatWeDoPage'));
-const LiveScribesPage = lazy(() => import('./pages/LiveScribesPage'));
-const RemoteScribesPage = lazy(() => import('./pages/RemoteScribesPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
 const OpportunitiesPage = lazy(() => import('./pages/OpportunitiesPage'));
 const MediaPage = lazy(() => import('./pages/MediaPage'));
@@ -49,14 +47,6 @@ const router = createBrowserRouter([
   { 
     path: '/what-we-do', 
     element: <WhatWeDoPage /> 
-  },
-  { 
-    path: '/what-we-do/live-scribes', 
-    element: <LiveScribesPage /> 
-  },
-  { 
-    path: '/what-we-do/remote-scribes', 
-    element: <RemoteScribesPage /> 
   },
   { 
     path: '/team', 

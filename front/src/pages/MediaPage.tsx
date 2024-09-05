@@ -2,7 +2,6 @@ import React from 'react';
 import Navigation from '../items/Navigation';
 import VideoPlayer from '../items/VideoPlayer';
 import Footer from '../items/Footer';
-import FlyerItem from '../items/FlyerItem';
 import ArticleItem from '../items/ArticleItem';
 import './MediaPage.css';
 import mediaBanner from '../assets/adobe_stock_white_long.jpg';
@@ -34,28 +33,6 @@ const MediaPage: React.FC = () => {
         </div>
       </div>
       <br/>
-      <div className="media-section-wrapper">
-        <h1>Helix Scribe Flyers</h1>
-        <div className="media-section flyers-section">
-          <div className="flyer-items">
-            <FlyerItem
-              href='https://www.helixscribes.com/downloads/logos_and_image_assets/helix_flyer.pdf'
-              title='About Us Flyer'
-              iconSrc={flyerIcon}
-            />
-            <FlyerItem
-              href='https://www.helixscribes.com/downloads/logos_and_image_assets/academy_brochure.pdf'
-              title='GVSU Scribe Academy'
-              iconSrc={flyerIcon}
-            />
-            <FlyerItem
-              href='https://www.helixscribes.com/downloads/logos_and_image_assets/recruitment_flyer.pdf'
-              title='Pre-Health?'
-              iconSrc={flyerIcon}
-            />
-          </div>
-        </div>
-      </div>
       <div className="media-section-wrapper">
         <h1>Articles</h1>
         <div className="media-section articles-section">

@@ -15,6 +15,8 @@ git clone https://github.com/your-username/example-website.git
 cd example-website
 ```
 
+If you are **absoluely confident** that your changes are improvements over the original stuff I have provided in this repository, feel free to upload here.
+
 Now you're ready to start working on your own project! Follow the steps below to set up the front end and back end, and start developing.
 
 ## Table of Contents

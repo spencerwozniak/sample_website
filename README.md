@@ -379,4 +379,4 @@ python main.py
 
 ### License
 
-This project is not yet licensed. See the [LICENSE.md]() file for details.
+This project is not yet licensed.

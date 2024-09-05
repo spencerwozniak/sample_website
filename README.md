@@ -20,10 +20,10 @@ Now you're ready to start working on your own project! Follow the steps below to
 ## Table of Contents
 
 - [Directory Structure](#directory-structure)
-- [Setting Up and Running the Front End](#setting-up-and-running-the-front-end)
-- [Setting Up and Running the Back End](#setting-up-and-running-the-back-end)
+- [Ideas for expanding the project](#ideas)
 - [Using GitHub](#using-github)
-- [Ideas for Expanding the Project](#ideas-for-expanding-the-project)
+- [Front End Setup and Usage](#front-end-setup-and-usage)
+- [Back End Setup and Usage](#back-end-setup-and-usage)
 
 ## Directory Structure
 

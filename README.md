@@ -1,11 +1,6 @@
-# Helix Website Upgrade
-
-- Current Website: https://www.helixscribes.com/hss/
-- Goal Website: https://www.scribeamerica.com/
+# Example Website
 
 https://youtu.be/FvEtPjhBXAw
-
-See this chat to see how ChatGPT was used to massively accelerate the development of this project: https://chatgpt.com/c/66620eb2-34d7-4ca1-9f26-6165a8349b04
 
 ## Table of Contents
 

@@ -8,7 +8,7 @@ import LoadingCircle from './items/LoadingCircle';  // Importing a LoadingCircle
 import ReactGA from 'react-ga4';  // Importing Google Analytics to track user behavior on the website.
 
 // Initialize Google Analytics with your specific measurement ID
-ReactGA.initialize('G-RHT79B9JCQ');
+ReactGA.initialize('YOUR_ID');
 
 // Using lazy loading for components to optimize page load times. Each component is only loaded when it's needed.
 const HomePage = lazy(() => import('./pages/HomePage'));

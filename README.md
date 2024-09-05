@@ -2,6 +2,8 @@
 
 https://youtu.be/FvEtPjhBXAw
 
+[Fork the repository to start working on your own project](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
 ## Table of Contents
 
 - [Directory Structure](#directory-structure)

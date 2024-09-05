@@ -1,34 +1,45 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// Import necessary libraries and components
+import AOS from 'aos';  // AOS is a library for animating elements when they scroll into view.
+import 'aos/dist/aos.css';  // Importing the CSS for AOS to apply animations.
 
-import React, { useState, useEffect } from 'react';
-import Communicate from '../components/Communicate'; // Import the Communicate component
-import TempMsg from '../items/TempMsg'; // Import the TempMsg component
-import './ContactForm.css';
+import React, { useState, useEffect } from 'react';  // Importing React, along with useState and useEffect hooks.
+import Communicate from '../components/Communicate'; // Importing a component for communication, possibly to handle form submissions.
+import TempMsg from '../items/TempMsg';  // Importing a temporary message component to show feedback to the user.
+import './ContactForm.css';  // Importing the CSS file that styles the contact form.
 
+// The main ContactForm component, written as a functional component in TypeScript (React.FC stands for React Functional Component).
 const ContactForm: React.FC = () => {
+
+  // useEffect hook runs AOS initialization once when the component is first rendered.
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: true,
+      duration: 1000,  // Animation duration set to 1000 milliseconds (1 second).
+      once: true,  // The animation should happen only once.
     });
-  }, []);
+  }, []);  // The empty array ensures this only runs on the first render.
 
+  // useState hook to manage form data. This sets up an object with empty values for each form field.
   const [formData, setFormData] = useState({
-    firstname: '',
-    lastname: '',
-    email: '',
-    phone: '',
-    company: '',
-    jobtitle: '',
-    statelist: '',
-    questions_or_comments: ''
+    firstname: '',   // First Name
+    lastname: '',    // Last Name
+    email: '',       // Email Address
+    phone: '',       // Phone Number
+    company: '',     // Organization/Company Name
+    jobtitle: '',    // Job Title
+    statelist: '',   // State (from a dropdown list)
+    questions_or_comments: ''  // Any questions or comments from the user
   });
 
+  // useState to manage the response message displayed to the user after submitting the form.
   const [responseMessage, setResponseMessage] = useState<string>('');
+
+  // useState to track if the form is being submitted (used to show a loading indicator).
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
+  // useState to track if the form is valid (all required fields filled).
   const [isFormValid, setIsFormValid] = useState<boolean>(false);
 
+  // This useEffect checks if all required fields are filled to enable form submission.
   useEffect(() => {
     const isValid =
       formData.firstname &&
@@ -38,34 +49,38 @@ const ContactForm: React.FC = () => {
       formData.company &&
       formData.jobtitle &&
       formData.statelist;
-    setIsFormValid(isValid);
-  }, [formData]);
+    setIsFormValid(isValid);  // If all fields are filled, the form is valid.
+  }, [formData]);  // This effect runs whenever the formData changes.
 
+  // Function to format phone numbers as the user types, adding parentheses and dashes.
   const formatPhoneNumber = (value: string) => {
-    if (!value) return value;
+    if (!value) return value;  // If the value is empty, return it as is.
 
-    const phoneNumber = value.replace(/[^\d]/g, '');
+    const phoneNumber = value.replace(/[^\d]/g, '');  // Remove any characters that are not numbers.
     const phoneNumberLength = phoneNumber.length;
 
-    if (phoneNumberLength < 4) return phoneNumber;
+    if (phoneNumberLength < 4) return phoneNumber;  // If fewer than 4 digits, return as is.
     if (phoneNumberLength < 7) {
-      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;  // Format as (XXX) XXX
     }
+    // Format as (XXX) XXX-XXXX
     return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
   };
 
+  // This function handles any changes made to the form inputs.
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target;  // Get the name and value of the input that was changed.
 
     if (name === 'phone') {
-      const formattedPhoneNumber = formatPhoneNumber(value);
-      setFormData({ ...formData, phone: formattedPhoneNumber });
+      const formattedPhoneNumber = formatPhoneNumber(value);  // If the phone number is being changed, format it.
+      setFormData({ ...formData, phone: formattedPhoneNumber });  // Update the form data with the formatted phone number.
     } else {
-      setFormData({ ...formData, [name]: value });
+      setFormData({ ...formData, [name]: value });  // Otherwise, update the form data normally.
     }
 
+    // Add a 'has-content' class if the input has value, otherwise remove it.
     if (value !== '') {
       e.target.classList.add('has-content');
     } else {
@@ -73,20 +88,24 @@ const ContactForm: React.FC = () => {
     }
   };
 
+  // This function restricts the phone number input to only allow numbers.
   const handlePhoneNumberKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     const allowedKeys = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', "Tab"];
+    // Prevent any keys that are not numbers or allowed control keys.
     if (!/[0-9]/.test(e.key) && !allowedKeys.includes(e.key)) {
       e.preventDefault();
     }
   };
 
+  // This function handles form submission when the user clicks the submit button.
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault();
+    e.preventDefault();  // Prevent the default form submission behavior (i.e., refreshing the page).
     if (isFormValid) {
-      setIsSubmitting(true);
+      setIsSubmitting(true);  // Set the submitting state to true if the form is valid.
     }
   };
 
+  // Clears the form data after submission or when needed.
   const clearForm = () => {
     setFormData({
       firstname: '',
@@ -100,8 +119,9 @@ const ContactForm: React.FC = () => {
     });
   };
 
+  // Strips formatting from the phone number before sending it to the server.
   const stripPhoneNumberFormatting = (phone: string) => {
-    return phone.replace(/[^\d]/g, '');
+    return phone.replace(/[^\d]/g, '');  // Remove all non-numeric characters.
   };
 
   return (
@@ -111,6 +131,7 @@ const ContactForm: React.FC = () => {
         <p>Get more information on how we can help you.</p>
         <br/>
         <form className="contact-form">
+          {/* Input for first name */}
           <div className="form-row">
             <div className="form-group">
               <input
@@ -124,6 +145,7 @@ const ContactForm: React.FC = () => {
               />
               <label htmlFor="firstname">First Name</label>
             </div>
+            {/* Input for last name */}
             <div className="form-group">
               <input
                 type="text"
@@ -137,6 +159,9 @@ const ContactForm: React.FC = () => {
               <label htmlFor="lastname">Last Name</label>
             </div>
           </div>
+          
+          {/* Other form fields for email, phone, company, job title, and more */}
+          {/* Similar structure for each field with appropriate validation and formatting */}
           <div className="form-group">
             <input
               type="email"
@@ -259,32 +284,37 @@ const ContactForm: React.FC = () => {
             ></textarea>
             <label htmlFor="questions_or_comments">Questions or Comments?</label>
           </div>
+          {/* Submit button */}
           <div className="form-group">
             <button
               onClick={handleSubmit}
               className="form-submit-button"
-              disabled={!isFormValid || isSubmitting}
+              disabled={!isFormValid || isSubmitting}  // Button is disabled if form is not valid or is submitting.
             >
-              {isSubmitting ? 'Submitting...' : 'Submit'}
+              {isSubmitting ? 'Submitting...' : 'Submit'}  // Change text to 'Submitting...' when the form is being processed.
             </button>
           </div>
         </form>
+        
+        {/* Display a temporary message to the user based on the response message */}
         {responseMessage && (
           <TempMsg
             message={responseMessage}
             clearMessage={() => setResponseMessage('')}
-            duration={5000}
-            error={false} // Set to true if you want to display an error message
+            duration={5000}  // Message is displayed for 5 seconds.
+            error={false}  // Set to true if you want to display an error message.
           />
         )}
       </div>
+
+      {/* If the form is being submitted, send data using the Communicate component */}
       {isSubmitting && (
         <Communicate
-          answer={JSON.stringify({ ...formData, phone: stripPhoneNumberFormatting(formData.phone) })}
+          answer={JSON.stringify({ ...formData, phone: stripPhoneNumberFormatting(formData.phone) })}  // Send the form data, with the phone number stripped of formatting.
           setResponse={(message) => {
-            setResponseMessage(message);
-            clearForm();
-            setIsSubmitting(false);
+            setResponseMessage(message);  // Display response message.
+            clearForm();  // Clear the form after submission.
+            setIsSubmitting(false);  // Mark submission as complete.
           }}
           setIsSubmitting={setIsSubmitting}
         />
@@ -293,4 +323,4 @@ const ContactForm: React.FC = () => {
   );
 };
 
-export default ContactForm;
+export default ContactForm;  // Export the ContactForm component to be used in other parts of the app.

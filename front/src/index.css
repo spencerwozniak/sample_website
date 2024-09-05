@@ -1,77 +1,83 @@
 /* index.css */
 
-/* Import Poppins font from Google Fonts */
+/* Import Poppins font from Google Fonts with weights 400, 500, and 700 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* CSS Reset */
+/* CSS Reset and root-level styles for consistency across browsers */
 :root {
-  font-family: 'Poppins';
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: #102245;
-  background-color: #ffffff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins'; /* Set the default font for the entire site to Poppins */
+  line-height: 1.5; /* Set the line height for better readability */
+  font-weight: 400; /* Default font weight */
+  color-scheme: light dark; /* Support both light and dark mode themes */
+  color: #102245; /* Default text color (dark blue) */
+  background-color: #ffffff; /* Default background color (white) */
+  font-synthesis: none; /* Ensure fonts are not synthesized (use real font weights) */
+  text-rendering: optimizeLegibility; /* Optimize text for legibility */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on Webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering on macOS */
 }
 
+/* Styles for all anchor (link) elements */
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 500; /* Make links slightly bolder */
+  color: #646cff; /* Default link color (light blue) */
+  text-decoration: inherit; /* Inherit the text decoration (underline) from parent elements */
 }
+
+/* Change the link color when hovered */
 a:hover {
-  color: #535bf2;
+  color: #535bf2; /* Darker blue for hovered links */
 }
 
+/* Styles for the body of the page */
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  margin: 0; /* Remove default browser margin */
+  display: flex; /* Use flexbox to manage layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text inside the body */
+  min-width: 320px; /* Ensure the body is at least 320px wide (mobile-friendly) */
+  min-height: 100vh; /* Set the body height to fill the entire viewport */
+  color: #102245; /* Text color */
+  font-family: 'Poppins'; /* Use Poppins font for body text */
+  font-size: 15px; /* Set the base font size to 15px */
+  line-height: 1.6em; /* Line height for better readability */
   text-align: center; /* Center text within the body */
-  min-width: 320px;
-  min-height: 100vh;
-  color: #102245;
-  font-family: 'Poppins';
-  font-size: 15px;
-  line-height: 1.6em;
-  text-align: center;
-  background: #ffffff;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
+  background: #ffffff; /* Background color */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
 }
 
+/* Styles for h1 (heading level 1) elements */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.2em; /* Large font size for headings */
+  line-height: 1.1; /* Slightly tighter line height to keep heading compact */
 }
 
+/* Enable smooth scrolling for the entire webpage */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Smooth scrolling when navigating between sections */
 }
 
+/* Styles for when the user prefers light color scheme */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547; /* Darker text color in light mode */
+    background-color: #ffffff; /* Keep background white in light mode */
   }
   a:hover {
-    color: #747bff;
+    color: #747bff; /* Slightly lighter blue for hovered links in light mode */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background for buttons in light mode */
   }
 }
 
-/* Additional styles to ensure text within containers is centered */
+/* Additional styles to ensure content inside '.container' elements is centered */
 .container {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center; /* Center text inside the container */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center child elements horizontally */
+  align-items: center; /* Center child elements vertically */
+  flex-direction: column; /* Stack child elements vertically */
 }

@@ -1,25 +1,77 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2020",  /* 
+      Sets the ECMAScript version that the TypeScript code will compile to. 
+      ES2020 allows modern JavaScript features like optional chaining, nullish coalescing, and more.
+    */
+    "useDefineForClassFields": true,  /* 
+      Ensures that class fields use the "define" semantics (ECMAScript compliant behavior for class fields).
+      This ensures class fields are defined in the order they are declared in the class.
+    */
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],  /* 
+      Specifies the libraries (built-in APIs) that TypeScript should include.
+      - ES2020: Includes ECMAScript 2020 standard features.
+      - DOM: Adds types for the Document Object Model (DOM), used when working with HTML elements.
+      - DOM.Iterable: Allows DOM objects to be iterable (e.g., NodeLists).
+    */
+    "module": "ESNext",  /* 
+      Specifies the module system TypeScript uses to compile. 
+      ESNext allows you to use the latest ECMAScript module syntax (import/export) without changing them to older formats.
+    */
+    "skipLibCheck": true,  /* 
+      Skips type-checking of library (e.g., node_modules) files. 
+      This can speed up the compilation process, as library files are assumed to be error-free.
+    */
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "moduleResolution": "bundler",  /* 
+      Specifies how modules are resolved. 
+      In bundler mode, it assumes that you're using a tool like Webpack, Rollup, or Vite to bundle the code.
+    */
+    "allowImportingTsExtensions": true,  /* 
+      Allows the importing of TypeScript files using `.ts` extensions. 
+      Normally, you don't import TypeScript files directly in production code, but this option enables that behavior.
+    */
+    "resolveJsonModule": true,  /* 
+      Allows importing `.json` files as modules. 
+      This is useful when you need to read data from a JSON file directly into your TypeScript code.
+    */
+    "isolatedModules": true,  /* 
+      Ensures each file is treated as a separate module. 
+      This is necessary for working with bundlers like Webpack, Rollup, or Vite.
+    */
+    "noEmit": true,  /* 
+      Prevents TypeScript from emitting (producing) JavaScript files during compilation. 
+      This is useful when you're using a bundler to handle compilation and don't need TypeScript to produce output files.
+    */
+    "jsx": "react-jsx",  /* 
+      Specifies how JSX syntax (used in React) should be handled. 
+      "react-jsx" is the modern JSX runtime used with React 17+, which eliminates the need to import React in every file.
+    */
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    /* Linting (Code Quality Checks) */
+    "strict": true,  /* 
+      Enables strict type-checking options to catch potential errors early.
+      It includes settings like strict null checks, strict function types, etc.
+    */
+    "noUnusedLocals": true,  /* 
+      Reports an error if there are local variables in your code that are declared but never used. 
+      This helps keep the code clean.
+    */
+    "noUnusedParameters": true,  /* 
+      Reports an error if a function or method has parameters that are never used. 
+      This helps clean up unnecessary code.
+    */
+    "noFallthroughCasesInSwitch": true  /* 
+      Ensures that `switch` statements have explicit breaks between cases to avoid fallthrough bugs.
+    */
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"],  /* 
+    Specifies the folder that TypeScript should include for compilation. 
+    In this case, it will only compile files inside the "src" directory.
+  */
+  "references": [{ "path": "./tsconfig.node.json" }]  /* 
+    Allows TypeScript to reference another configuration file (`tsconfig.node.json`). 
+    This is useful in monorepos or projects that have different configurations for different environments (e.g., client and server).
+  */
 }

@@ -1,203 +1,201 @@
-/* Navigation.css */
-
 .navigation-header {
-  background-color: white;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1002;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  background-color: white; /* White background for the navigation bar */
+  padding: 10px 20px; /* Adds padding inside the navigation bar */
+  position: fixed; /* Keeps the navigation bar fixed at the top of the page */
+  width: 100%; /* Ensures the navigation bar takes up the full width of the page */
+  top: 0; /* Positions the navigation bar at the top */
+  left: 0; /* Aligns the navigation bar with the left edge */
+  z-index: 1002; /* Ensures the navigation bar stays on top of other content */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  display: flex; /* Uses flexbox to arrange elements inside the container */
+  align-items: center; /* Vertically aligns items in the center */
+  justify-content: space-between; /* Distributes items with space between them */
+  width: 100%; /* Takes up the full width */
+  max-width: 2000px; /* Sets a maximum width for large screens */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Adds padding on the left and right */
+  box-sizing: border-box; /* Includes padding in the width */
 }
 
 .nav-menu-button {
-  padding-right: 8px;
+  padding-right: 8px; /* Adds space to the right of the menu button */
 }
 
 .left-section, .right-section {
-  display: flex;
-  align-items: center;
+  display: flex; /* Aligns items horizontally using flexbox */
+  align-items: center; /* Vertically aligns items in the center */
 }
 
 .logo {
-  max-width: 153px;
-  height: auto;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+  max-width: 153px; /* Limits the logo's width */
+  height: auto; /* Automatically adjusts the height based on the width */
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25)); /* Adds a shadow to the logo */
 }
 
 .right-side-links {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+  list-style-type: none; /* Removes bullets from the list */
+  display: flex; /* Displays the links horizontally */
+  gap: 20px; /* Adds space between links */
 }
 
 .contact-link {
-  font-size: 13px;
-  font-weight: 700;
-  color: rgb(16, 34, 69);
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 40px;
-  display: block;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 13px; /* Sets the font size */
+  font-weight: 700; /* Makes the text bold */
+  color: rgb(16, 34, 69); /* Dark blue color */
+  text-transform: uppercase; /* Converts text to uppercase */
+  text-decoration: none; /* Removes the underline */
+  line-height: 40px; /* Vertically centers the text */
+  display: block; /* Makes the link take up the full block width */
+  position: relative; /* Allows the link to be positioned relative to other elements */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects for color and scaling */
 }
 
 .contact-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Enlarges the link slightly on hover */
 }
 
 .contact-link:hover, 
 .contact-link:focus, 
 .contact-link:active {
-  color: #657c2c;
+  color: #657c2c; /* Changes the link color to green on hover, focus, or click */
 }
 
 .right-side-links--big .right-side-links__link {
-  display: block;
-  position: relative;
-  width: 141.989px;
-  height: 40px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 40px;
-  cursor: pointer;
-  background-color: #102245;
-  border-radius: 24px;
-  overflow: hidden;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block; /* Displays the link as a block */
+  position: relative; /* Allows the link to be positioned relative to other elements */
+  width: 141.989px; /* Sets a fixed width */
+  height: 40px; /* Sets a fixed height */
+  text-align: center; /* Centers the text */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 13px; /* Sets the font size */
+  font-weight: 700; /* Makes the text bold */
+  line-height: 40px; /* Vertically centers the text */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  background-color: #102245; /* Sets a navy blue background color */
+  border-radius: 24px; /* Rounds the corners */
+  overflow: hidden; /* Hides any content that overflows the box */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects for background color and scaling */
 }
 
 .right-side-links--big .right-side-links__link:hover {
-  background-color: #657c2c;
-  transform: scale(1.05);
+  background-color: #657c2c; /* Changes background color to green on hover */
+  transform: scale(1.05); /* Enlarges the button slightly on hover */
 }
 
 .right-side-links__rotating-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeInOut 8s ease-in-out infinite;
+  position: absolute; /* Positions the text absolutely within the container */
+  width: 100%; /* Takes up the full width of the container */
+  height: 100%; /* Takes up the full height of the container */
+  left: 0; /* Aligns the text with the left edge */
+  top: 0; /* Aligns the text with the top edge */
+  opacity: 0; /* Initially sets the text to be invisible */
+  display: flex; /* Uses flexbox to align the text */
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers the text vertically */
+  animation: fadeInOut 8s ease-in-out infinite; /* Adds a fade in/out animation that repeats infinitely */
 }
 
 .right-side-links__rotating-text:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 4s; /* Delays the animation for the second text */
 }
 
 @keyframes fadeInOut {
-  0%, 10% { opacity: 0; }
-  25%, 45% { opacity: 1; }
-  60%, 100% { opacity: 0; }
+  0%, 10% { opacity: 0; } /* Text is invisible at the start */
+  25%, 45% { opacity: 1; } /* Text becomes visible between 25% and 45% */
+  60%, 100% { opacity: 0; } /* Text fades out after 60% */
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 99px;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 0;
-  z-index: 1001;
-  border: 1px solid rgb(241, 241, 241);
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  position: absolute; /* Positions the dropdown menu relative to its nearest positioned ancestor */
+  top: 99px; /* Positions the menu below the navigation bar */
+  left: 0; /* Aligns the menu with the left edge */
+  width: 100%; /* Makes the menu take up the full width */
+  background-color: white; /* White background for the dropdown menu */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  padding: 0; /* Removes default padding */
+  z-index: 1001; /* Ensures the menu appears on top of other elements */
+  border: 1px solid rgb(241, 241, 241); /* Adds a light border */
+  box-sizing: border-box; /* Includes padding in the width */
+  display: flex; /* Uses flexbox to arrange menu columns horizontally */
+  justify-content: space-around; /* Distributes menu columns evenly */
+  overflow: hidden; /* Hides any overflowing content */
+  max-height: 0; /* Initially hides the menu by setting its height to 0 */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Smooth transitions for opening/closing the menu */
 }
 
 .dropdown-menu.open {
-  max-height: 500px;
-  padding: 15px 0;
-  padding-top: 25px;
+  max-height: 500px; /* Expands the menu when open */
+  padding: 15px 0; /* Adds padding inside the menu */
+  padding-top: 25px; /* Adds additional padding at the top */
 }
 
 .dropdown-menu.closed {
-  max-height: 0;
-  padding: 0;
+  max-height: 0; /* Collapses the menu when closed */
+  padding: 0; /* Removes padding */
 }
 
 .nav-column {
-  flex: 1;
-  padding: 0 20px;
+  flex: 1; /* Makes each column take up equal space */
+  padding: 0 20px; /* Adds padding on the sides */
 }
 
 .nav-column__heading {
-  font-size: 18px;
-  color: rgb(16, 34, 69);
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: block;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 18px; /* Sets the font size for column headings */
+  color: rgb(16, 34, 69); /* Sets the color to dark blue */
+  font-weight: bold; /* Makes the heading bold */
+  margin-bottom: 10px; /* Adds space below the heading */
+  display: block; /* Makes the heading take up the full width */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scaling */
 }
 
 .nav-column__heading:hover {
-  color: #9dbf44;
-  transform: scale(1.04);
+  color: #9dbf44; /* Changes the color to green on hover */
+  transform: scale(1.04); /* Slightly enlarges the heading on hover */
 }
 
 .nav-column__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style: none; /* Removes bullets from the list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
 
 .nav-column__link {
-  color: #657c2c;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: normal;
-  display: block;
-  margin-bottom: 8px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #657c2c; /* Green color for links */
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Sets the font size for links */
+  font-weight: normal; /* Normal font weight */
+  display: block; /* Makes the link take up the full width */
+  margin-bottom: 8px; /* Adds space below each link */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scaling */
 }
 
 .nav-column__link:hover {
-  color: #9dbf44;
-  transform: scale(1.04);
+  color: #9dbf44; /* Changes the link color to green on hover */
+  transform: scale(1.04); /* Slightly enlarges the link on hover */
 }
 
 /* Media Query for hiding the contact link on smaller screens */
 @media (max-width: 600px) {
   .contact-link {
-    display: none;
+    display: none; /* Hides the contact link on screens smaller than 600px */
   }
 }
 
 @media (max-width: 500px) {
   .right-side-links--big .right-side-links__link {
-    width: 120px;
-    font-size: 11px;
-    height: 35px;
-    line-height: 35px;
-    margin-right: auto; /* Move the button to the left */
+    width: 120px; /* Reduces the button width */
+    font-size: 11px; /* Reduces the font size */
+    height: 35px; /* Reduces the button height */
+    line-height: 35px; /* Adjusts the line height */
+    margin-right: auto; /* Aligns the button to the left */
   }
 }
 
@@ -205,27 +203,27 @@
 @media (max-width: 768px) {
 
   .navigation-header {
-    padding: 10px 0px;
+    padding: 10px 0px; /* Reduces padding for smaller screens */
   }
   
   .nav-container {
-    margin: 0 auto;
-    padding: 0 15px;
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Reduces padding for smaller screens */
   }
 
   .right-section {
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    padding-right: 20px;
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+    align-items: flex-start; /* Aligns items to the left */
+    padding-right: 20px; /* Adds padding to the right */
   }
 
   .dropdown-menu {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Stacks dropdown columns vertically on smaller screens */
+    align-items: flex-start; /* Aligns columns to the left */
   }
 
   .nav-column {
-    width: 100%;
-    padding: 10px 0;
+    width: 100%; /* Makes columns take up full width */
+    padding: 10px 0; /* Adds padding above and below */
   }
 }

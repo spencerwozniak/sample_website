@@ -1,48 +1,63 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- 
+      The <meta charset="UTF-8"> tag defines the character encoding for the document as UTF-8, 
+      which supports most characters used in the world, including symbols and emojis.
+    -->
     <meta charset="UTF-8" />
+
+    <!-- 
+      Link to the favicon (the small icon that appears on the browser tab). 
+      Here, the favicon is a PNG image named 'helix_logo_no_text.png'.
+    -->
     <link rel="icon" type="image/png" href="/helix_logo_no_text.png" />
+
+    <!-- 
+      The <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag ensures that the webpage is responsive. 
+      It tells the browser to control the page's dimensions and scaling based on the device's width (mobile, tablet, etc.).
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The title of the webpage, which will appear in the browser tab. -->
     <title>Healthcare Company</title>
-    <!-- Preload key assets -->
-    <link rel="preload" href="/src/assets/home_banner.jpg" as="image">
-    <link rel="preload" href="/src/assets/about_us.jpg" as="image">
-    <link rel="preload" href="/src/assets/contact_us.jpg" as="image">
-    <link rel="preload" href="/src/assets/course_banner.jpg" as="image">
-    <!-- Preload case images -->
-    <!-- link rel="preload" href="/src/assets/course1_case0.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case1.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case2.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case3.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case4.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case5.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case6.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case7.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case8.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case9.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case10.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case11.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case12.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case13.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case14.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case15.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case16.jpg" as="image">
-    <link rel="preload" href="/src/assets/course1_case17.jpg" as="image"-->
-    <link rel="preload" href="/src/index.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style">
-    <!-- Preconnect to required origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Import main CSS file -->
+
+    <!-- 
+      Preload key assets to improve page load performance. 
+      Preloading tells the browser to load these assets (images, styles) early, so they are ready when needed.
+    -->
+    <link rel="preload" href="/src/assets/home_banner.jpg" as="image">  <!-- Preload the home banner image. -->
+    <link rel="preload" href="/src/assets/about_us.jpg" as="image">  <!-- Preload the about us image. -->
+    <link rel="preload" href="/src/assets/contact_us.jpg" as="image">  <!-- Preload the contact us image. -->
+    <link rel="preload" href="/src/assets/course_banner.jpg" as="image">  <!-- Preload the course banner image. -->
+    <link rel="preload" href="/src/index.css" as="style">  <!-- Preload the main CSS file for styling. -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style">  <!-- Preload the font to improve rendering. -->
+
+    <!-- Preconnect to external resources (fonts) to speed up the loading of resources from Google. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- Preconnect to Google's font API. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- Preconnect to the domain serving the fonts. -->
+
+    <!-- Import the main CSS file to style the entire website. -->
     <link rel="stylesheet" href="/src/index.css">
-    <!-- Import Google Fonts -->
+
+    <!-- 
+      Import Google Fonts for typography. 
+      The 'Inter' font is being loaded in three different weights (400 for regular, 500 for medium, and 600 for semi-bold).
+    -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <!-- 'div' is the container for our application -->
+    <!-- 
+      The 'div' with the ID 'root' is a placeholder where the React app will be rendered. 
+      React will dynamically insert the content of the web application inside this 'div'.
+    -->
     <div id="root"></div> 
-    <!-- 'script' referencing our 'main.tsx' -->
+
+    <!-- 
+      This 'script' tag links to the main entry point of the React application. 
+      The 'main.tsx' file contains the code to render the app within the 'root' div.
+    -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

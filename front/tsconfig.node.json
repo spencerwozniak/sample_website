@@ -1,11 +1,32 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "strict": true
+    "composite": true,  /* 
+      Enables "composite" projects, which are required for incremental builds and project references.
+      This setting is useful in larger projects where multiple TypeScript projects reference each other, improving build times.
+    */
+    "skipLibCheck": true,  /* 
+      Skips type-checking for the definition files (usually from `node_modules`).
+      This can speed up the build process by assuming that the external libraries are error-free.
+    */
+    "module": "ESNext",  /* 
+      Specifies that the project should use the latest ECMAScript module system.
+      ESNext allows modern JavaScript syntax like import/export, and ensures compatibility with bundlers like Webpack or Vite.
+    */
+    "moduleResolution": "bundler",  /* 
+      Specifies how modules are resolved. 
+      "bundler" mode is optimized for bundlers like Vite, Rollup, or Webpack, ensuring the correct handling of module imports and paths.
+    */
+    "allowSyntheticDefaultImports": true,  /* 
+      Allows default imports from modules that do not actually have a default export. 
+      This is common in JavaScript projects, where TypeScript needs to be more lenient with module imports.
+    */
+    "strict": true  /* 
+      Enables all strict type-checking options in TypeScript. 
+      This includes strict null checks, strict function types, and other options that enforce better type safety and reduce potential bugs.
+    */
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"]  /* 
+    Specifies the files that should be included in the TypeScript compilation process.
+    In this case, it includes only the Vite configuration file (`vite.config.ts`), which is used to configure the Vite build tool.
+  */
 }

@@ -1,5 +1,7 @@
 # Example Website
 
+This repository contains all the code you need to start developing your own website with a React + TypeScript front-end and Python + Flask back-end.
+
 [Fork the repository to start working on your own project](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 ## Table of Contents
@@ -10,11 +12,9 @@
 - [Front End Setup and Usage](#front-end-setup-and-usage)
 - [Back End Setup and Usage](#back-end-setup-and-usage)
 
-
-
 ## Directory Structure
 
-Here’s a brief overview of the directory structure:
+Here’s a brief overview of the directory structure. Note that you may want to delete files, add files, or modify files tailored to your specific use case.
 
 ```
 course/                         # Root directory
@@ -33,15 +33,62 @@ course/                         # Root directory
 |   |
 |   ├── src/                        # Directory containing all source code for the front end.
 |   |   |
-|   |   ├── main.tsx                # MAIN SCRIPT FOR RUNNING THE FRONT END
+|   |   ├── main.tsx                # MAIN SCRIPT FOR RUNNING THE FRONT END ('npm run dev' runs this script)
 |   |   ├── index.css               # Global styles
 |   |   ├── vite-env.d.ts           # Used to define types specific to the Vite environment
 |   |   |
-|   |   ├── pages/                  # Directory containing React elements for the main pages
+|   |   ├── pages/                  # Directory containing React elements for pages of the website (TSX + CSS for each page unless otherwise noted)
+|   |   |   |
+|   |   |   |                       ## Basic webpages ##
+|   |   |   ├── HomePage            # Code for landing / home page
+|   |   |   ├── NotFound            # Page for 404 not found
+|   |   |   ├── MediaPage           # Code for page to showcase media (videos, articles, etc)
+|   |   |   |
+|   |   |   |                       ## Informational webpages ##
+|   |   |   ├── AboutPage           # Code for about us page
+|   |   |   ├── WhatWeDoPage        # Code for what we do page
+|   |   |   ├── MissionPage         # Code for mission page
+|   |   |   ├── HistoryPage         # Code for history page
+|   |   |   ├── TeamPage            # Code for team page
+|   |   |   |
+|   |   |   |                       ## Business-related webpages ##
+|   |   |   ├── ContactPage         # Code for contact us page
+|   |   |   ├── OpportunitiesPage   # Code for page for job listings
+|   |   |   ├── jobData.json        # File for storing job listing data
+|   |   |   |
+|   |   |   |                       ## Webpages related to user accounts ##
+|   |   |   ├── LoginPage           # Code for logging in page (preliminary)
+|   |   |   ├── RegisterPage        # Code for registering page (preliminary)
+|   |   |   ├── AccountForm.css     # Styling for the above pages
+|   |   |   └── ProfilePage         # Code for page for viewing and editing your profile (preliminary)
 |   |   |
-|   |   ├── items/                  # Directory containing React elements for different items of the site
+|   |   ├── items/                  # Directory containing React elements for different items used on the pages of the site (TSX + CSS unless otherwise specified)
+|   |   |   |
+|   |   |   |                       ## Basic website elements ##
+|   |   |   ├── Navigation          # Navigation bar that locks at the top of the page
+|   |   |   ├── MenuButton          # Animated button for accessing menu on Navbar
+|   |   |   ├── Header              # Header section for the top of a page
+|   |   |   ├── Footer              # Footer for bottom of page
+|   |   |   ├── LoadingCircle       # Displays when pages are loading
+|   |   |   |
+|   |   |   |                       ## Optional website elements ##
+|   |   |   ├── TempMsg             # Displays a temporary message on the page
+|   |   |   ├── VideoPlayer         # A simple video player for embedding YouTube videos
+|   |   |   ├── ArticleItem         # Item for displaying an article (preliminary)
+|   |   |   |
+|   |   |   |                       ## Website elements for business ##
+|   |   |   ├── MapSection          # Section for putting a map and company contact information
+|   |   |   ├── ContactForm         # Form for filling out contact information
+|   |   |   ├── Testimonials        # Testimonials about your website / company
+|   |   |   ├── ImpactSection       # Impact of your company
+|   |   |   ├── Timeline            # A timeline for the history page (preliminary, does not look right yet)
+|   |   |   ├── Timeline.json       # File for storing timeline data
+|   |   |   └── TeamCard            # Card for displaying a team member
 |   |   |
 |   |   ├── components/             # Directory containing purely functional components of the front end
+|   |   |   |  
+|   |   |   ├── Communicate         # Used for communicating with the back-end (HIGHLY IMPORTANT)
+|   |   |   └── ProtectedRoute      # Used to determine whether a user is logged in / has priveleges to access a certain area of the website
 |   |   |
 |   |   ├── context/                # Directory containing React elements for setting context.
 |   |   |   |
@@ -55,7 +102,7 @@ course/                         # Root directory
 |
 ├── back/                       # Directory containing all back end shit from course (NEED TO UPDATE THIS)
 |   |
-|   ├── main.py                 # MAIN SCRIPT FOR RUNNING THE BACK END
+|   ├── main.py                 # MAIN SCRIPT FOR RUNNING THE BACK END (do whatever you need on the back end from here)
 |   |
 |   ├── .env                    # Environment variables for this folder (Contains SQL stuff)
 |   ├── instance/               # SQL databases
@@ -65,7 +112,7 @@ course/                         # Root directory
 │   ├── .gitignore              # Tells GitHub to ignore certain local files (e.g. "venv/")
 │   ├── setup_venv.bat          # Initializes venv for Windows
 │   ├── requirements.txt        # Contains dependencies needed for the venv
-│   ├── README.md               # 
+│   ├── README.md               # README file for back end
 │   |
 │   └── venv/                   # Directory containing shit downloaded with 'setup_venv'
 │   

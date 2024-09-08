@@ -32,7 +32,7 @@ Now you're ready to start working on your own project! Follow the steps below to
 This is a high-level overview of the directory structure. It shows where important files are located and gives some guidance on how you might want to modify the code. You can customize or remove files based on the needs of your project.
 
 ```
-course/                         # Root directory
+sample_website/                 # Root directory
 |
 ├── update_github.bat           # Run this script to automatically update the GitHub with your local changes.
 │

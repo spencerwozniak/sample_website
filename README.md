@@ -13,7 +13,7 @@ If you're planning to develop your own website based on this project, the first 
 Once you've forked the repository, clone it to your local machine using:
 
 ```bash
-git clone https://github.com/your-username/example-website.git
+git clone https://github.com/spencerwozniak/sample_website.git
 cd example-website
 ```
 

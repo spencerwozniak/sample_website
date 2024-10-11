@@ -1,6 +1,6 @@
 # Front End
 
-## The front end is written in React + TypeScript + Vite
+## The front end is written in [React](https://react.dev/learn) + [TypeScript](https://www.typescriptlang.org/docs/) + [Vite](https://vite.dev/guide/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

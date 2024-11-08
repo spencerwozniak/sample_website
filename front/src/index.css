@@ -31,6 +31,7 @@ a:hover {
 
 /* Styles for the body of the page */
 body {
+  overflow-x: hidden;
   margin: 0; /* Remove default browser margin */
   display: flex; /* Use flexbox to manage layout */
   justify-content: center; /* Center content horizontally */

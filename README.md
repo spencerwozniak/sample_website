@@ -157,6 +157,7 @@ Moreover, if you find a website you like, you can often **Inspect Element** on t
 As you work on your website, also consider what additional pages might be useful to include. For example, the **AboutUs** and **ContactUs** pages are placeholders that can be expanded with more specific information about your brand, mission, or team. The **CoursesPage** could feature a detailed course catalog, while **NEW PAGES** could include sections like FAQs, Testimonials, or a Services Overview.
 
 Here are some websites you can check out for **artistic inspiration**:
+- https://www.lemurpbc.org/
 - [Robinhood](https://robinhood.com/us/en/): Clean, professional design with modern UI elements.
 - [Material Kit React](https://demos.creative-tim.com/material-kit-react/): A React-based version of the Material Kit UI, great for adding functional, modern design elements to your project.
 - [Slider Revolution](https://www.sliderrevolution.com/design/innovative-creative-websites/): "The most innovative and creative websites you just have to see"

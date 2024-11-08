@@ -12,7 +12,7 @@ import NavButton from '../items/NavButton';
 import ContactForm from '../items/ContactForm';  // Importing the contact form component.
 import Testimonials from '../items/Testimonials';  // Importing the testimonials section.
 import ImpactSection from '../items/ImpactSection';  // Importing the impact section (likely showing the company's achievements or mission).
-import Scribes1 from '../assets/healthcare_banner.jpg';  // Importing an image asset for use in the header.
+import HeaderImage from '../assets/healthcare_banner.png';  // Importing an image asset for use in the header.
 import healthcareBanner from '../assets/locations.jpg';  // Importing an image for use in the "Why us?" section.
 import handsBanner from '../assets/holding_hands.jpg';  // Importing an image for use in the "We are here to Help" section.
 import './HomePage.css';  // Importing the CSS file that styles this component.
@@ -51,7 +51,7 @@ function HomePage() {
         <Header 
           title="Healthcare Company"  // Passing title text to the Header component.
           subtitle="Your company motto."  // Passing subtitle text to the Header component.
-          imageSrc={Scribes1}  // Passing the image to be displayed in the header.
+          imageSrc={HeaderImage}  // Passing the image to be displayed in the header.
         />
       </header>
 

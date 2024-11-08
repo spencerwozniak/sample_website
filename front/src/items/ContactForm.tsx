@@ -291,7 +291,7 @@ const ContactForm: React.FC = () => {
               className="form-submit-button"
               disabled={!isFormValid || isSubmitting}  // Button is disabled if form is not valid or is submitting.
             >
-              {isSubmitting ? 'Submitting...' : 'Submit'}  // Change text to 'Submitting...' when the form is being processed.
+              {isSubmitting ? 'Submitting...' : 'Submit'} 
             </button>
           </div>
         </form>

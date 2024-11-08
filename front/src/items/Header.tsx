@@ -14,7 +14,6 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, imageSrc }) => {
         <div className="header-text-container">
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
-          <a href="#learn-more" className="header-button">Learn More</a>
         </div>
         {imageSrc && (
           <div className="header-image-container">

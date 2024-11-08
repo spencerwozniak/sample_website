@@ -10,7 +10,7 @@ import './WhatWeDoPage.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import wwdBanner from '../assets/scribe_working_1.jpg';
+import HeaderImage from '../assets/wwd_banner.png';
 import liveScribeImage from '../assets/live_scribe.jpg';
 import remoteScribesImage from '../assets/scribe_working_2.jpg';
 import locationsImage from '../assets/gr_medical_mile.jpg';
@@ -43,7 +43,7 @@ function WhatWeDoPage() {
         <Header 
           title="We provide healthcare!"
           subtitle="To advance patient care."
-          imageSrc={wwdBanner}
+          imageSrc={HeaderImage}
         />
       </header>
 

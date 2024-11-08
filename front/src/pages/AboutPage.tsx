@@ -8,7 +8,7 @@ import NavButton from '../items/NavButton';
 import ContactForm from '../items/ContactForm';
 import Footer from '../items/Footer';
 import Header from '../items/Header';
-import aboutBanner from '../assets/about_us_banner.jpg';
+import aboutBanner from '../assets/about_banner.png';
 import ScribeWorking1 from '../assets/scribe_working_1.jpg';
 import ourHistory from '../assets/history.jpg';
 import ourTeam from '../assets/senior_scribes.jpg';

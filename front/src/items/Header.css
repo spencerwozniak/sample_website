@@ -2,105 +2,76 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px; /* Padding at the top of the section */
-  width: 100vw; /* Ensures the header spans the full width of the viewport */
-  margin: 0; /* Removes any default margin */
-}
-
-.header-image-container {
+  padding: 100px 20px;
   width: 100%;
-  height: 100vh; /* Header height is 100% of the viewport height minus 40px for padding */
-  overflow: hidden;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Shadow around the box */
-}
-
-.header-image {
-  position: relative;
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image in the container */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 100%; /* Ensures the image fills the entire container */
-}
-
-.header-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Ensure the overlay matches the image height */
-  background-color: rgba(0, 0, 0, 0.66); /* Translucent black overlay */
-  z-index: 1; /* Ensure the overlay is on top of the image */
-}
-
-.header-content-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  width: 100%; /* Updated to take the full width */
-  max-width: none; /* Remove max-width restriction */
-}
-
-.header-text-container {
-  color: #fff; /* White text color */
-  max-width: 100%; /* Allow text container to take up full width */
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.header-text-container {
+  flex: 1;
+  color: #333; /* Adjust text color as needed */
+  padding-right: 20px;
+}
+
 .header-text-container h1 {
-  font-size: clamp(3em, 6vw, 5em); /* Adjusted clamp values for h1 font size */
+  font-size: clamp(2.5em, 5vw, 4em);
   margin-bottom: 10px;
   font-weight: 700;
-  animation: fadeInDown 1s ease-out; /* Simple fade-in animation */
 }
 
 .header-text-container p {
-  font-size: clamp(1.2em, 2.5vw, 1.4em); /* Responsive font size that adjusts between 1em and 1.2em based on viewport width */
+  font-size: clamp(1.2em, 2vw, 1.4em);
   line-height: 1.6;
   margin-bottom: 20px;
-  animation: fadeInUp 1s ease-out;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.header-button {
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.header-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 500px; /* Adjust max width as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .header-content-wrapper {
+  .header-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .header-text-container h1 {
-    font-size: clamp(2em, 5vw, 2.5em); /* Adjusting for smaller screens */
+  .header-text-container {
+    padding-right: 0;
+    margin-bottom: 20px;
   }
 
-  .header-text-container p {
-    font-size: clamp(0.9em, 2.5vw, 1.1em); /* Adjusting for smaller screens */
+  .header-image {
+    max-width: 100%;
   }
 }

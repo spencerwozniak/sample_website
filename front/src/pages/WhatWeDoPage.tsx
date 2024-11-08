@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from '../items/Navigation';
 import Footer from '../items/Footer';
+import NavButton from '../items/NavButton';
 import ContactForm from '../items/ContactForm';
 import Header from '../items/Header';
 import './WhatWeDoPage.css';
@@ -55,7 +56,7 @@ function WhatWeDoPage() {
             <div className="what-we-do-text-container">
               <h1>Physicians</h1>
               <p>Highly trained professional physicians on-site at service locations providing comprehensive patient care and making critical decisions. This option is ideal for healthcare settings requiring a high volume of shifts or where the environment demands the physician's direct presence to ensure optimal patient outcomes and timely medical interventions.</p>
-              <a href='/what-we-do/live-scribes' className='what-we-do-nav-button'><b>Learn more</b></a>
+              <NavButton to="/what-we-do/live-scribes" label="Learn more" />
             </div>
           </div>
         </section>
@@ -68,7 +69,7 @@ function WhatWeDoPage() {
             <div className="what-we-do-text-container">
               <h1>Physician Associates (PAs)</h1>
               <p>Highly trained professional physician associates on-site at service locations, providing essential support to physicians and delivering patient care. This option is ideal for healthcare settings requiring extensive coverage or where the environment benefits from having a physician associate present to assist with clinical tasks, patient management, and medical procedures.</p>
-              <a href='/what-we-do/remote-scribes' className='what-we-do-nav-button'><b>Learn more</b></a>
+              <NavButton to="/what-we-do/remote-scribes" label="Learn more" />
             </div>
           </div>
         </section>

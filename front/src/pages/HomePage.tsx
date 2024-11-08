@@ -3,12 +3,12 @@ import { useEffect } from 'react';  // useEffect is a React Hook that allows us 
 import AOS from 'aos';  // AOS is a JavaScript library used to animate elements on scroll.
 import 'aos/dist/aos.css';  // Importing the CSS file for AOS animations.
 
-import { Link } from 'react-router-dom';  // Link is used to create navigation links between different pages in a React Router application.
 import { Helmet } from 'react-helmet';  // Helmet allows us to manage the document head, like setting the page title and meta tags.
 
 import Navigation from '../items/Navigation';  // Importing the navigation bar component.
 import Header from '../items/Header';  // Importing the header section for the page.
 import Footer from '../items/Footer';  // Importing the footer section for the page.
+import NavButton from '../items/NavButton';
 import ContactForm from '../items/ContactForm';  // Importing the contact form component.
 import Testimonials from '../items/Testimonials';  // Importing the testimonials section.
 import ImpactSection from '../items/ImpactSection';  // Importing the impact section (likely showing the company's achievements or mission).
@@ -66,7 +66,7 @@ function HomePage() {
             <div className="home-text-container"> {/* Container for the text in the first section */}
               <h1>We are here to Help</h1> {/* Title in the first section */}
               <p>Our company is one of the leading providers of medical services...</p>
-              <Link to='/what-we-do' className="home-nav-button">Learn more</Link> {/* Link to another page */}
+              <NavButton to="/what-we-do" label="Learn more" />
             </div>
           </div>
         </section>
@@ -81,7 +81,7 @@ function HomePage() {
                 <li>We require quarterly continuing medical education...</li>
                 <li>We average over 99% shift coverage across all clients.</li>
               </ul>
-              <Link to='/about' className="home-nav-button">Learn more</Link> {/* Link to another page */}
+              <NavButton to="/about" label="Learn more" />
             </div>
             <div className="home-image-container"> {/* Container for the image in the second section */}
               <img src={healthcareBanner} alt="Healthcare locations" loading="lazy" className="home-image" /> {/* Image with alt text */}

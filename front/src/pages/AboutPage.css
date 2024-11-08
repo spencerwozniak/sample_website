@@ -98,39 +98,8 @@
 }
 
 /* Button Styles */
-.about-nav-button {
-  display: inline-block;
+.nav-button {
   margin-top: 20px;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 40px;
-  cursor: pointer;
-  background-color: #102245;
-  border-radius: 24px;
-  overflow: hidden;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
-}
-
-.about-nav-button:hover {
-  background-color: #657c2c;
-  transform: scale(1.05);
-  color: rgb(255, 255, 255);
-}
-
-.about-nav-button:active {
-  background-color: #40591b;
-  transform: scale(0.98);
-  color: rgb(255, 255, 255);
-}
-
-.about-nav-button:focus {
-  outline: none;
-  color: rgb(255, 255, 255);
 }
 
 /* Reverse Layout for Specific Section */
@@ -188,12 +157,6 @@
 
   .about-text-container p {
     font-size: 1em;
-  }
-
-  .about-nav-button {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 16px;
   }
 
   .reverse-layout {

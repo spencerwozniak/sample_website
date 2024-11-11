@@ -1,3 +1,50 @@
+/* Style for main navigation links */
+.nav-main-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-main-link {
+  position: relative;
+  color: rgb(16, 34, 69);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Hover dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+  color: #657c2c;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #9dbf44;
+}
+
 .navigation-header {
   background-color: white; /* White background for the navigation bar */
   padding: 10px 20px; /* Adds padding inside the navigation bar */

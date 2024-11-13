@@ -158,6 +158,7 @@ As you work on your website, also consider what additional pages might be useful
 
 Here are some websites you can check out for **artistic inspiration**:
 - https://www.lemurpbc.org/
+- https://acceptedtogether.com/
 - [Robinhood](https://robinhood.com/us/en/): Clean, professional design with modern UI elements.
 - [Material Kit React](https://demos.creative-tim.com/material-kit-react/): A React-based version of the Material Kit UI, great for adding functional, modern design elements to your project.
 - [Slider Revolution](https://www.sliderrevolution.com/design/innovative-creative-websites/): "The most innovative and creative websites you just have to see"

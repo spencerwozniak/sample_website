@@ -4,8 +4,6 @@
 
 #### You can use this project to begin developing your own website with a **[React](https://flask.palletsprojects.com/en/3.0.x/) + [TypeScript](https://www.typescriptlang.org/docs/) + [Vite](https://vite.dev/guide/) front-end** and a **Python via [Flask](https://flask.palletsprojects.com/en/3.0.x/) back-end**. 
 
-Whether you're building a personal portfolio or developing a full-scale web app, this repository provides a structured starting point to help you get started quickly. 
-
 _Note that my experience in building websites is limited, so there may be inadequacies to this layout that you can address. If you find inadequacies (e.g. redundant CSS) and you are **absoluely confident** that your changes are improvements over the original stuff I have provided in this repository, feel free to overwrite._
 
 ### How to Get Started

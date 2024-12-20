@@ -1,34 +1,57 @@
-import { useState } from 'react';  // Importing useState to manage component state.
+import { useState, useEffect } from 'react';  // Importing useState to manage component state.
 import { Link } from "react-router-dom";  // Importing Link from react-router-dom for navigation between different routes/pages.
 import MenuButton from './MenuButton';  // Importing a custom component called MenuButton.
 import './Navigation.css';  // Importing the CSS file for the navigation styles.
 
+let mobileThreshold: number = 960;
+
 const Navigation = () => {
     // useState hook to track whether the submenu is open or closed. Initial state is 'false' (closed).
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < mobileThreshold); // Mobile view threshold
 
     // Function to toggle the submenu open and closed by flipping the boolean value.
     const toggleSubMenu = () => {
         setIsSubMenuOpen(!isSubMenuOpen);  // Sets isSubMenuOpen to the opposite of its current value.
     };
 
+    // Update `isMobile` state on window resize
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < mobileThreshold);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <header className="navigation-header">  {/* Defines the header section of the page, specifically for navigation */}
             <div className="nav-container">  {/* Container for the entire navigation bar */}
                 
-                {/* Left section of the navigation bar */}
-                <div className="left-section">
                     {/* Menu button to toggle the submenu */}
-                    <div className="nav-menu-button">
-                        <MenuButton onClick={toggleSubMenu} />  {/* The MenuButton triggers the toggleSubMenu function when clicked */}
-                    </div>
-                    {/* Logo section with a link to the homepage */}
-                    <div className="nav-brand">
-                        <a href="/">  {/* Clicking this link redirects to the homepage ("/") */}
-                            <img src="/helix_logo_text.png" alt="Logo" className="logo" />  {/* Displays the company logo */}
-                        </a>
-                    </div>
-                </div>
+                    {isMobile ? (
+                        <div className="left-section">
+                            <div className="nav-menu-button">
+                                <MenuButton onClick={toggleSubMenu} />  {/* The MenuButton triggers the toggleSubMenu function when clicked */}
+                            </div>
+                            <div className="nav-brand">
+                                <a href="/">  {/* Clicking this link redirects to the homepage ("/") */}
+                                    <img src="/helix_logo_text.png" alt="Logo" className="logo" />  {/* Displays the company logo */}
+                                </a>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="left-section">
+                            <div className="nav-brand">
+                                <a href="/">  {/* Clicking this link redirects to the homepage ("/") */}
+                                    <img src="/helix_logo_text.png" alt="Logo" className="logo" />  {/* Displays the company logo */}
+                                </a>
+                            </div>
+                            <ul className="nav-main-links">
+                                <li><Link to="/what-we-do" className="nav-main-link">What We Do</Link></li>
+                                <li><Link to="/about" className="nav-main-link">About Us</Link></li>
+                                <li><Link to="/media" className="nav-main-link">Media</Link></li>
+                            </ul>
+                        </div>
+                    )}
                 
                 {/* Right section of the navigation bar */}
                 <div className="right-section">

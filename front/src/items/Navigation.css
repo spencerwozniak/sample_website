@@ -1,53 +1,6 @@
-/* Style for main navigation links */
-.nav-main-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-main-link {
-  position: relative;
-  color: rgb(16, 34, 69);
-  text-decoration: none;
-  padding: 10px;
-  font-weight: bold;
-}
-
-/* Hover dropdown menu styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 10px 0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Dropdown link styles */
-.dropdown-content a {
-  color: #657c2c;
-  text-decoration: none;
-  padding: 8px 20px;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: #9dbf44;
-}
-
 .navigation-header {
   background-color: white; /* White background for the navigation bar */
-  padding: 10px 20px; /* Adds padding inside the navigation bar */
+  padding: 5px 20px; /* Adds padding inside the navigation bar */
   position: fixed; /* Keeps the navigation bar fixed at the top of the page */
   width: 100%; /* Ensures the navigation bar takes up the full width of the page */
   top: 0; /* Positions the navigation bar at the top */
@@ -71,6 +24,39 @@
   box-sizing: border-box; /* Includes padding in the width */
 }
 
+/* Hover dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+  color: #657c2c;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #9dbf44;
+}
+
 .nav-menu-button {
   padding-right: 8px; /* Adds space to the right of the menu button */
 }
@@ -81,7 +67,8 @@
 }
 
 .logo {
-  max-width: 153px; /* Limits the logo's width */
+  max-width: 145px; /* Limits the logo's width */
+  padding-top: 2px;
   height: auto; /* Automatically adjusts the height based on the width */
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25)); /* Adds a shadow to the logo */
 }
@@ -161,7 +148,7 @@
 
 .dropdown-menu {
   position: absolute; /* Positions the dropdown menu relative to its nearest positioned ancestor */
-  top: 99px; /* Positions the menu below the navigation bar */
+  top: 87px; /* Positions the menu below the navigation bar */
   left: 0; /* Aligns the menu with the left edge */
   width: 100%; /* Makes the menu take up the full width */
   background-color: white; /* White background for the dropdown menu */
@@ -214,6 +201,16 @@
   padding: 0; /* Removes default padding */
 }
 
+.nav-main-links {
+  list-style: none; /* Removes bullets from the list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  padding-top: 5px;
+  padding-left: 5vw;
+  display: flex; /* Ensure flexbox layout */
+  gap: clamp(10px, 5vw, 50vw); /* Minimum 10px, scales with 2% of viewport width, max 50px */
+}
+
 .nav-column__link {
   color: #657c2c; /* Green color for links */
   text-decoration: none; /* Removes underline */
@@ -225,6 +222,21 @@
 }
 
 .nav-column__link:hover {
+  color: #9dbf44; /* Changes the link color to green on hover */
+  transform: scale(1.04); /* Slightly enlarges the link on hover */
+}
+
+.nav-main-link {
+  color: rgb(16, 34, 69); /* Green color for links */
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Sets the font size for links */
+  font-weight: normal; /* Normal font weight */
+  display: block; /* Makes the link take up the full width */
+  margin-bottom: 8px; /* Adds space below each link */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scaling */
+}
+
+.nav-main-link:hover {
   color: #9dbf44; /* Changes the link color to green on hover */
   transform: scale(1.04); /* Slightly enlarges the link on hover */
 }
@@ -248,15 +260,6 @@
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {
-
-  .navigation-header {
-    padding: 10px 0px; /* Reduces padding for smaller screens */
-  }
-  
-  .nav-container {
-    margin: 0 auto; /* Centers the container */
-    padding: 0 15px; /* Reduces padding for smaller screens */
-  }
 
   .right-section {
     flex-direction: column; /* Stacks items vertically on smaller screens */
